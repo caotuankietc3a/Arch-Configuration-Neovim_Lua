@@ -68,7 +68,10 @@ sudo pacman -S colorls
 https://github.com/kietcaoc3a/nvim-lua-configuration.git
 ```
 
-# **Tolyo-night**
+# **Tokyo-night**
 
-![image](https://github.com/kietcaoc3a/nvim-lua-configuration/blob/main/Arch%20Config/My%20Custom%20Arch/Tokyo-night.png)
-![image](https://github.com/kietcaoc3a/nvim-lua-configuration/blob/main/Arch%20Config/My%20Custom%20Arch/Tokyo-dark.png)
+![image](https://github.com/caotuankietc3a/Arch-Configuration-Neovim_Lua/blob/main/Arch%20Config/My%20Custom%20Arch/Tokyo-night.png)
+
+# **Tokyo-dark**
+
+![image](https://github.com/caotuankietc3a/Arch-Configuration-Neovim_Lua/blob/main/Arch%20Config/My%20Custom%20Arch/Tokyo-dark.png)
