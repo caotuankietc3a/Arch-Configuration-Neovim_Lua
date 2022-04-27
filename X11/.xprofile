@@ -1,0 +1,62 @@
+# Random Photo Every Login
+# feh --bg-fill --randomize ~/Pictures/Tokyo-Night/*
+
+# Monitor Config
+# xrandr --auto --output DVI-D-0 --mode 2560x1440 --left-of HDMI-0
+
+# Don't Randomly Turn off
+xset s off
+xset -dpms
+xset s noblank
+
+
+# Environment variables set everywhere
+export EDITOR="nvim"
+export TERMINAL="st"
+export BROWSER="brave"
+
+# For QT Themes
+export QT_QPA_PLATFORMTHEME=qt5ct
+
+# XDG Paths
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_CACHE_HOME=$HOME/.cache
+export XDG_DATA_HOME=$HOME/.local/share
+
+# Network Manager Applet
+nm-applet --indicator &
+
+# Speedy keys
+xset r rate 210 40
+
+# Compositor
+# picom -b
+
+# Hide mouse when typing
+xbanish &
+
+# Screenshots
+flameshot &
+
+# Bluetooth systray icon
+blueman-applet &
+
+# helps with puls audio
+pasystray &
+
+# Screenkey applet (this will break everything)
+# screenkey --start-disabled
+
+# remap caps to escape
+# setxkbmap -option caps:escape
+# swap escape and caps
+# setxkbmap -option caps:swapescape
+
+
+# zsh config dir
+export ZDOTDIR=$HOME/.config/zsh
+# source "$HOME/.config/zsh/.zshrc"
+# export LC_ALL=en_US.UTF-8
+
+# must be in bottom
+exec i3

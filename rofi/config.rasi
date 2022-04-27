@@ -1,0 +1,18 @@
+/** Basic config file **/
+
+configuration {
+  show-icons: true;
+  icon-theme: "Papirus";
+  modi: "drun,window,run";
+  drun-display-format: "{icon} {name}";
+	width: 35;
+  height: 35;
+	show-icons: true;
+	icon-theme: "papirus";
+	lines: 10;
+	fake-transparency: true;
+	sidebar-mode: true;
+  fake-transparency: true;
+  font: "Fira Code Nerd Font 15";
+}
+@theme "~/.config/rofi/themes/tokyo_night.rasi"
