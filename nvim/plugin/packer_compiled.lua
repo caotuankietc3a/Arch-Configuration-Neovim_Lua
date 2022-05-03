@@ -264,11 +264,6 @@ _G.packer_plugins = {
     path = "/home/caparies/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
   },
-  ["vim-snippets"] = {
-    loaded = true,
-    path = "/home/caparies/.local/share/nvim/site/pack/packer/start/vim-snippets",
-    url = "https://github.com/honza/vim-snippets"
-  },
   ["vim-visual-multi"] = {
     loaded = true,
     path = "/home/caparies/.local/share/nvim/site/pack/packer/start/vim-visual-multi",

@@ -118,16 +118,10 @@ return packer.startup(function(use)
 		{ branch = "master" },
 	})
 
-	-- Snippets
-	use("honza/vim-snippets")
-
 	-- React-js
-	-- use("styled-components/vim-styled-components")
-	-- use("pangloss/vim-javascript")
-	-- use("leafgarland/typescript-vim")
-	-- use("peitalin/vim-jsx-typescript")
 	use("mattn/emmet-vim")
 	use("windwp/nvim-ts-autotag") -- Autotags for javascript, react
+	-- use("styled-components/vim-styled-components", { branch = "main" })
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

@@ -21,7 +21,8 @@ null_ls.setup({
 		end
 	end,
 	sources = {
-		formatting.prettier.with({ extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } }),
+		-- formatting.prettier.with({ extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } }),
+		formatting.prettier.with({ extra_args = {} }),
 		-- formatting.black.with({ extra_args = { "--fast" } }),
 		-- formatting.clang_format,
 		-- formatting.autopep8,

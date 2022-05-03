@@ -28,15 +28,11 @@ dashboard.section.header.val = {
 
 dashboard.section.buttons.val = {
 	dashboard.button("i", "  Configuration", ":e ~/.config/nvim/init.lua <CR>"),
-	dashboard.button(
-		"os",
-		"  Os Assignment",
-		":e ~/Desktop/GanhCaBon/OS/assignment/source_code/include/common.h <CR>"
-	),
+	dashboard.button("os", "  Os Assignment", ":e ~/Desktop/GanhCaBon/OS/assignment/include/common.h <CR>"),
 	dashboard.button(
 		"vi",
 		"  Video Chat App",
-		":e ~/Desktop/GanhCaBon/Project_HTML_CSS/Video-Chat-App/client/src/App.js <CR>"
+		":e ~/Desktop/GanhCaBon/React-Node-App/Video-Chat-App/client/src/App.jsx <CR>"
 	),
 	dashboard.button("f", "  Find file", ":Telescope find_files <CR>"),
 	dashboard.button("e", "  New file", ":ene <BAR> startinsert <CR>"),

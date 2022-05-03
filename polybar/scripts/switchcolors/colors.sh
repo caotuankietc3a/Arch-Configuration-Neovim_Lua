@@ -9,6 +9,7 @@ Powermenu_Rofi_DIR="$HOME/.config/rofi/powermenu/"
 ColorlsDIR="$HOME/.config/colorls/dark_colors.yaml"
 Icon_Theme_DIR="$HOME/.config/Arch Config/My Custom Arch"
 Dunst_DIR="$HOME/.config/dunst"
+Zsh_DIR="$HOME/.config/zsh"
 
 if  [[ $1 = "tokyonight" ]]; then
 
@@ -52,6 +53,10 @@ if  [[ $1 = "tokyonight" ]]; then
   sed -i '0,/background-inputbar: .*/s//background-inputbar: #2A3950ff;/' $Powermenu_Rofi_DIR/styles/colors.rasi
   sed -i '0,/foreground: .*/s//foreground: #ff9e64;/' $Powermenu_Rofi_DIR/styles/colors.rasi
   sed -i '0,/border: .*/s//border: #7da6ff;/' $Powermenu_Rofi_DIR/styles/colors.rasi
+
+  # Changing colors of powermenu of zsh-prompt
+  sed -i '34,36 s/yellow/blue/g' $Zsh_DIR/zsh-prompt
+  sed -i '34,36 s/magenta/red/1' $Zsh_DIR/zsh-prompt
 
   # handle command
   notify-send "Change Theme" "Tokyo Night" --icon="$Icon_Theme_DIR/Tokyo-night.png" -t 1500 -a "System"
@@ -106,6 +111,10 @@ if  [[ $1 = "tokyodark" ]]; then
   sed -i '0,/background-inputbar: .*/s//background-inputbar: #14141410;/' $Powermenu_Rofi_DIR/styles/colors.rasi
   sed -i '0,/foreground: .*/s//foreground: #7da6ff;/' $Powermenu_Rofi_DIR/styles/colors.rasi
   sed -i '0,/border: .*/s//border: #ff9e64;/' $Powermenu_Rofi_DIR/styles/colors.rasi
+
+  # Changing colors of powermenu of zsh-prompt
+  sed -i '34,36 s/blue/yellow/g' $Zsh_DIR/zsh-prompt
+  sed -i '34,36 s/red/magenta/1' $Zsh_DIR/zsh-prompt
 
   # handle command
   notify-send "Change Theme" "Tokyo Dark" --icon="$Icon_Theme_DIR/Tokyo-dark.png" -t 1500 -a "System"
