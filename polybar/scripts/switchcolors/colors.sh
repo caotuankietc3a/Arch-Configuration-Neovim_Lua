@@ -36,7 +36,12 @@ if  [[ $1 = "tokyonight" ]]; then
   sed -i '0,/background: .*/s//background: rgba(40,44,52,0.8);/' $ThemeDIR/tokyo_night_powermenu.rasi
   sed -i '0,/background: .*/s//background: rgba(40,44,52,0.8);/' $ThemeDIR/tokyo_night_setting.rasi
   sed -i '0,/background: .*/s//background: rgba(40,44,52,0.8);/' $ThemeDIR/tokyo_night_switch_theme.rasi
-  sed -i '0,/background: .*/s//background: rgba(40,44,52,0.8);/' $ThemeDIR/tokyo_night_switch_theme.rasi
+  sed -i '0,/foreground: .*/s//foreground: #ff9e64f0;/' $ThemeDIR/tokyo_night_switch_theme.rasi
+  sed -i '0,/foreground: .*/s//foreground: #ff9e64f0;/' $ThemeDIR/tokyo_night_setting.rasi
+  sed -i '0,/foreground: .*/s//foreground: #ff9e64f0;/' $ThemeDIR/tokyo_night_powermenu.rasi
+  sed -i '0,/bright-blue: .*/s//bright-blue: #7da6ff;/' $ThemeDIR/tokyo_night_powermenu.rasi
+  sed -i '0,/bright-blue: .*/s//bright-blue: #7da6ff;/' $ThemeDIR/tokyo_night_setting.rasi
+  sed -i '0,/bright-blue: .*/s//bright-blue: #7da6ff;/' $ThemeDIR/tokyo_night_switch_theme.rasi
 
   # Changing colors of dunst
   sed -i '57,60 s/background = .*/background = "#32344a80"/1' $Dunst_DIR/dunstrc 
@@ -94,6 +99,13 @@ if  [[ $1 = "tokyodark" ]]; then
   sed -i '0,/background: .*/s//background: #14141410;/' $ThemeDIR/tokyo_night_powermenu.rasi
   sed -i '0,/background: .*/s//background: #14141410;/' $ThemeDIR/tokyo_night_setting.rasi
   sed -i '0,/background: .*/s//background: #14141410;/' $ThemeDIR/tokyo_night_switch_theme.rasi
+  sed -i '0,/foreground: .*/s//foreground: #7da6ff;/' $ThemeDIR/tokyo_night_switch_theme.rasi
+  sed -i '0,/foreground: .*/s//foreground: #7da6ff;/' $ThemeDIR/tokyo_night_setting.rasi
+  sed -i '0,/foreground: .*/s//foreground: #7da6ff;/' $ThemeDIR/tokyo_night_powermenu.rasi
+  # Border color
+  sed -i '0,/bright-blue: .*/s//bright-blue: #ff9e64f0;/' $ThemeDIR/tokyo_night_powermenu.rasi
+  sed -i '0,/bright-blue: .*/s//bright-blue: #ff9e64f0;/' $ThemeDIR/tokyo_night_setting.rasi
+  sed -i '0,/bright-blue: .*/s//bright-blue: #ff9e64f0;/' $ThemeDIR/tokyo_night_switch_theme.rasi
 
   # Changing colors of dunst
   sed -i '57,60 s/background = .*/background = "#14141410"/1' $Dunst_DIR/dunstrc

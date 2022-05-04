@@ -44,6 +44,9 @@ blueman-applet &
 # helps with puls audio
 pasystray &
 
+# Copyq
+# copyq &
+
 # Screenkey applet (this will break everything)
 # screenkey --start-disabled
 

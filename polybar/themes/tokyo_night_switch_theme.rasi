@@ -1,6 +1,6 @@
 * {
   background: #14141410;
-  foreground: #ff9e64f0;
+  foreground: #7da6ff;
 
    normal-black:   #32344a;
    normal-red:     #f7768e;
@@ -15,7 +15,7 @@
    bright-red:     #ff7a93;
    bright-green:   #b9f27c;
    bright-yellow:  #ff9e64;
-   bright-blue:    #7da6ff;
+   bright-blue: #ff9e64f0;
    bright-magenta: #bb9af7;
    bright-cyan:    #0db9d7;
    bright-white:   #acb0d0;
@@ -52,9 +52,10 @@ inputbar {
   children: [textbox-prompt-colon];
   spacing: 5;
   padding: 1;
+  border: 2;
   border: 0.1% 0.3% 0.1% 0.3%;
-  border-radius: 12px;
-  border-color: @border;
+  border-radius: 12;
+  border-color: @bright-blue;
 }
 
 textbox-prompt-colon {
