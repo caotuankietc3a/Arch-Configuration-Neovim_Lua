@@ -22,10 +22,14 @@ vim.g.maplocalleader = " "
 -- Normal --
 
 -- Don't allow to use up down left right and create new tab
-keymap("n", "<Up>", ":tabnew<CR>", opts)
-keymap("n", "<Down>", ":tabc<CR>", opts)
-keymap("n", "<Left>", ":tabp<CR>", opts)
-keymap("n", "<Right>", ":tabn<CR>", opts)
+-- keymap("n", "<Up>", ":tabnew<CR>", opts)
+-- keymap("n", "<Down>", ":tabc<CR>", opts)
+-- keymap("n", "<Left>", ":tabp<CR>", opts)
+-- keymap("n", "<Right>", ":tabn<CR>", opts)
+keymap("n", "<Up>", ":echo 'Use k'<CR>", opts)
+keymap("n", "<Down>", ":echo 'Use j'<CR>", opts)
+keymap("n", "<Left>", ":echo 'Use h'<CR>", opts)
+keymap("n", "<Right>", ":echo 'Use l'<CR>", opts)
 
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)

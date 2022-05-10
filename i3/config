@@ -49,7 +49,7 @@ floating_modifier $mod
 bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
-bindsym $mod+shift+q kill; exec $changeWorkspace
+bindsym $mod+q kill; exec $changeWorkspace
 
 # start dmenu Rofi (a program launcher)
 # bindsym $mod+d exec rofi -show drun 
@@ -273,4 +273,4 @@ bindcode $mod+51 exec $HOME/.config/polybar/scripts/switchcolors/color_switch.sh
 
 # =========================== Pass =====================
 # caotuankietc3a
-# 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
+# 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
