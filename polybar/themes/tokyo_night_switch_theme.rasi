@@ -1,6 +1,6 @@
 * {
-  background: #14141410;
-  foreground: #7da6ff;
+  background: rgba(40,44,52,0.8);
+  foreground: #ff9e64f0;
 
    normal-black:   #32344a;
    normal-red:     #f7768e;
@@ -15,7 +15,7 @@
    bright-red:     #ff7a93;
    bright-green:   #b9f27c;
    bright-yellow:  #ff9e64;
-   bright-blue: #ff9e64f0;
+   bright-blue: #7da6ff;
    bright-magenta: #bb9af7;
    bright-cyan:    #0db9d7;
    bright-white:   #acb0d0;

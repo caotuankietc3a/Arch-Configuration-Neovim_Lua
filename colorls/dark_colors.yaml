@@ -1,8 +1,8 @@
 # Main Colors
-unrecognized_file: red
-recognized_file:  "#cf42ab"
+unrecognized_file: gold
+recognized_file: yellow
 executable_file: lime
-dir:  "#ff8a0d"
+dir: dodgerblue
 
 # Link
 dead_link: red

@@ -121,7 +121,7 @@ set $ws10 "10"
 set $changeWorkspace "$HOME/.config/polybar/setup.sh"
 
 # switch to workspace
-set $randompicture exec feh --bg-scale --randomize ~/.config/Arch\ Config/Spaces/*
+set $randompicture exec feh --bg-scale --randomize ~/.config/Arch\ Config/Anime/*
 
 bindsym $mod+1 workspace number $ws1; exec $changeWorkspace; $randompicture
 bindsym $mod+2 workspace number $ws2; exec $changeWorkspace; $randompicture
@@ -195,13 +195,13 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # ==================== Wallpaper =======================
-exec_always feh --bg-scale --randomize ~/.config/Arch\ Config/Spaces/*
+exec_always feh --bg-scale --randomize ~/.config/Arch\ Config/Anime/*
 # ===================== Color ============================
 # color defines for zenburn styled i3
 set $bg #2c2c2e
 set $fg #9f9f9f
 set $hi #efef8f
-set $ac #fa8541
+set $ac #61AFEF
 set $tx #040404
 set $ia #8f8f8f
 set $be #8faf9f
@@ -273,4 +273,4 @@ bindcode $mod+51 exec $HOME/.config/polybar/scripts/switchcolors/color_switch.sh
 
 # =========================== Pass =====================
 # caotuankietc3a
-# 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
+# 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

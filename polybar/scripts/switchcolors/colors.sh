@@ -21,15 +21,9 @@ if  [[ $1 = "tokyonight" ]]; then
   sed -i 's/xwindow = .*/xwindow = #356eb0/g' $ColorDIR
   sed -i 's/change_theme = .*/change_theme = #356eb0/g' $ColorDIR
   sed -i 's/cpu = .*/cpu = #00e1ff/g' $ColorDIR
+  sed -i 's/border = .*/border = #fa8541/g' $ColorDIR
   sed -i 's/i3-seperator = .*/i3-seperator = #2d9683/g' $ColorDIR
   sed -i 's/i3-unfocus = .*/i3-unfocus = #fc607c/g' $ColorDIR
-
-  # Changing colors of zsh and clorls
-  sed -i 's/unrecognized_file: .*/unrecognized_file: gold/g' $ColorlsDIR
-  sed -i 's/dir: .*/dir: dodgerblue/g' $ColorlsDIR
-  sed -i 's/\<recognized_file\>: .*/recognized_file: yellow/g' $ColorlsDIR
-
-  # Changing colors of polybar
   sed -i "s/colors: .*/colors: *tokyo-night/g" $ALDIR
   sed -i '0,/colorscheme .*/s//colorscheme tokyonight/' $NvimDIR
   sed -i '0,/set $ac .*/s//set $ac #61AFEF/' $I3DIR
@@ -42,6 +36,11 @@ if  [[ $1 = "tokyonight" ]]; then
   sed -i '0,/bright-blue: .*/s//bright-blue: #7da6ff;/' $ThemeDIR/tokyo_night_powermenu.rasi
   sed -i '0,/bright-blue: .*/s//bright-blue: #7da6ff;/' $ThemeDIR/tokyo_night_setting.rasi
   sed -i '0,/bright-blue: .*/s//bright-blue: #7da6ff;/' $ThemeDIR/tokyo_night_switch_theme.rasi
+
+  # Changing colors of zsh and clorls
+  sed -i 's/unrecognized_file: .*/unrecognized_file: gold/g' $ColorlsDIR
+  sed -i 's/dir: .*/dir: dodgerblue/g' $ColorlsDIR
+  sed -i 's/\<recognized_file\>: .*/recognized_file: yellow/g' $ColorlsDIR
 
   # Changing colors of dunst
   sed -i '57,60 s/background = .*/background = "#32344a80"/1' $Dunst_DIR/dunstrc 
@@ -84,15 +83,9 @@ if  [[ $1 = "tokyodark" ]]; then
   sed -i -e 's/xwindow = .*/xwindow = #a37233/g' $ColorDIR
   sed -i -e 's/change_theme = .*/change_theme = #faa434/g' $ColorDIR
   sed -i -e 's/cpu = .*/cpu = #2263bf/g' $ColorDIR
+  sed -i 's/border = .*/border = #61AFEF/g' $ColorDIR
   sed -i -e 's/i3-seperator = .*/i3-seperator = #cc9a74/g' $ColorDIR
   sed -i -e 's/i3-unfocus = .*/i3-unfocus = #d12662/g' $ColorDIR
-
-  # Changing colors of zsh and clorls
-  sed -i -e 's/unrecognized_file: .*/unrecognized_file: red/g' $ColorlsDIR
-  sed -i -e 's/dir: .*/dir:  "#ff8a0d"/g' $ColorlsDIR
-  sed -i 's/\<recognized_file\>: .*/recognized_file:  "#cf42ab"/g' $ColorlsDIR
-
-  # Changing colors of polybar
   sed -i "s/colors: .*/colors: *tokyo-night-storm/g" $ALDIR
   sed -i '0,/colorscheme .*/s//colorscheme tokyodark/' $NvimDIR
   sed -i '0,/set $ac .*/s//set $ac #fa8541/' $I3DIR
@@ -106,6 +99,11 @@ if  [[ $1 = "tokyodark" ]]; then
   sed -i '0,/bright-blue: .*/s//bright-blue: #ff9e64f0;/' $ThemeDIR/tokyo_night_powermenu.rasi
   sed -i '0,/bright-blue: .*/s//bright-blue: #ff9e64f0;/' $ThemeDIR/tokyo_night_setting.rasi
   sed -i '0,/bright-blue: .*/s//bright-blue: #ff9e64f0;/' $ThemeDIR/tokyo_night_switch_theme.rasi
+
+  # Changing colors of zsh and clorls
+  sed -i -e 's/unrecognized_file: .*/unrecognized_file: red/g' $ColorlsDIR
+  sed -i -e 's/dir: .*/dir:  "#ff8a0d"/g' $ColorlsDIR
+  sed -i 's/\<recognized_file\>: .*/recognized_file:  "#cf42ab"/g' $ColorlsDIR
 
   # Changing colors of dunst
   sed -i '57,60 s/background = .*/background = "#14141410"/1' $Dunst_DIR/dunstrc
