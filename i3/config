@@ -164,7 +164,7 @@ set $visible true
 # Examples
 gaps inner 7
 # gaps outer 5
-gaps top 35
+gaps top 37
 
 # ===================== Resize ================================
 # resize window (you can also use the mouse for that)
@@ -275,6 +275,9 @@ bindsym $mod+b exec $HOME/.config/i3/togglepolybar/run.sh
 # =========================== Change Theme =========================
 bindcode $mod+51 exec $HOME/.config/polybar/scripts/switchcolors/color_switch.sh
 
+# =========================== Copy Text =========================
+bindsym $mod+c exec copyq menu
+
 # =========================== Pass =====================
 # caotuankietc3a
-# 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
+# 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

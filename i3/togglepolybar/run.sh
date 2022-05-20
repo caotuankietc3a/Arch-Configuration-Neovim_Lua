@@ -10,7 +10,7 @@ then
   polybar-msg cmd hide
 else
   sed -i -e "s/\$visible .*/\$visible true/g" $CONFIG
-  sed -i -e "s/gaps top .*/gaps top 35/g" $CONFIG
+  sed -i -e "s/gaps top .*/gaps top 37/g" $CONFIG
   i3-msg reload
   xdotool click 1
   polybar-msg cmd show

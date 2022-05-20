@@ -62,6 +62,12 @@ sudo pacman -S ibus-bamboo
 sudo pacman -S colorls
 ```
 
+### copyq
+
+```
+sudo pacman -S copyq
+```
+
 ### **Learn more from kietcaoc3a**
 
 ```

@@ -45,7 +45,7 @@ blueman-applet &
 pasystray &
 
 # Copyq
-# copyq &
+copyq &
 
 # Screenkey applet (this will break everything)
 # screenkey --start-disabled
