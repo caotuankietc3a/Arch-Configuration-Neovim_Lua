@@ -5,9 +5,9 @@
 # xrandr --auto --output DVI-D-0 --mode 2560x1440 --left-of HDMI-0
 
 # Don't Randomly Turn off
-xset s off
-xset -dpms
-xset s noblank
+# xset s off
+# xset -dpms
+# xset s noblank
 
 
 # Environment variables set everywhere
