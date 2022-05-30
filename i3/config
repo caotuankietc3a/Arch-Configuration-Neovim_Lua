@@ -245,7 +245,7 @@ bindcode $mod+34 exec $HOME/.config/i3/changelanguage/run.sh
 bindsym $mod+Shift+s exec flameshot gui 
 
 # ====================== CapsLock =========================
-bindcode $mod+35 exec $HOME/.config/i3/togglecapslock/run.sh
+bindcode $mod+66 exec $HOME/.config/i3/togglecapslock/run.sh
 
 # /usr/share/doc/picom/examples
 exec_always picom

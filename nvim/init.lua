@@ -22,4 +22,12 @@ require("caparies.autocommands")
 require("caparies.colorizer")
 require("caparies.emet")
 require("caparies.autotags")
+
+-- Complier
+require("caparies.compiler")
+
 -- .local/share/nvim/site/pack/packer/start/
+
+if vim.fn.exists("g:vscode") ~= 0 then
+	vim.cmd("source ~/.config/nvim/lua/caparies/vscode-keybindings/settings.vim")
+end
