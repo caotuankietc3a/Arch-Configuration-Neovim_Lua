@@ -37,12 +37,20 @@ local get_user_input = function(arg_val)
 	return cmd
 end
 
-function _CPP_FILE_TOGGLE()
-	local arg_val = vim.fn.input("Enter value of argv[1] = ")
-	vim.fn.printf("\n %s", get_user_input(arg_val))
-	local cpp_with_file = Terminal:new({
+function _CPP_FILEs_TOGGLE()
+	local arg_array = {}
+	local no_arg = vim.fn.input("Enter the number of argument: ")
+	for i = 1, tonumber(no_arg), 1 do
+		arg_array[i] = vim.fn.input("argv[" .. i .. "] = ")
+	end
+	local arg_val = ""
+	for i = 1, tonumber(no_arg) - 1, 1 do
+		arg_val = arg_array[i] .. " " .. arg_array[i + 1]
+	end
+
+	local cpp_with_files = Terminal:new({
 		cmd = get_user_input(arg_val),
 		direction = "float",
 	})
-	cpp_with_file:toggle()
+	cpp_with_files:toggle()
 end
