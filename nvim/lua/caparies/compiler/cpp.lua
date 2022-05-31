@@ -39,7 +39,7 @@ end
 
 function _CPP_FILEs_TOGGLE()
 	local arg_array = {}
-	local no_arg = vim.fn.input("Enter the number of argument: ")
+	local no_arg = vim.fn.input("Enter the number of arguments: ")
 	for i = 1, tonumber(no_arg), 1 do
 		arg_array[i] = vim.fn.input("argv[" .. i .. "] = ")
 	end
