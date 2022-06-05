@@ -106,6 +106,12 @@ return packer.startup(function(use)
 	-- Theme Tokyodark
 	use("tiagovla/tokyodark.nvim")
 
+	-- Theme catppuccin
+	use({
+		"catppuccin/nvim",
+		as = "catppuccin",
+	})
+
 	-- Colorize plug
 	use("norcalli/nvim-colorizer.lua")
 

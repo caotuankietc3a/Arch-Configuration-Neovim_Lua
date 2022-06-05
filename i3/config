@@ -158,13 +158,13 @@ bindsym $mod+Shift+r exec pkill picom; exec picom; restart
 
 # ===================== Gaps =============================
 # You can also use any non-zero value if you'd like to have a border
-for_window [class=".*"] border pixel 3
+for_window [class=".*"] border pixel 4
 
 set $visible true
 # Examples
 gaps inner 7
 # gaps outer 5
-gaps top 37
+gaps top 40
 
 # ===================== Resize ================================
 # resize window (you can also use the mouse for that)
@@ -277,6 +277,9 @@ bindcode $mod+51 exec $HOME/.config/polybar/scripts/switchcolors/color_switch.sh
 
 # =========================== Copy Text =========================
 bindsym $mod+c exec copyq menu
+
+# =========================== Conky =========================
+exec_always $HOME/.conky/conky-startup.sh
 
 # =========================== Pass =====================
 # caotuankietc3a

@@ -20,6 +20,7 @@ if  [[ $1 = "tokyodark" ]]; then
   sed -i -e 's/powermenu = .*/powermenu = #fa8541/g' $ColorDIR
   sed -i -e 's/xwindow = .*/xwindow = #a37233/g' $ColorDIR
   sed -i -e 's/change_theme = .*/change_theme = #faa434/g' $ColorDIR
+  sed -i 's/date = .*/date = #fffc05/g' $ColorDIR
   sed -i -e 's/cpu = .*/cpu = #2263bf/g' $ColorDIR
   sed -i 's/border = .*/border = #61AFEF/g' $ColorDIR
   sed -i -e 's/i3-seperator = .*/i3-seperator = #cc9a74/g' $ColorDIR
@@ -61,8 +62,8 @@ if  [[ $1 = "tokyodark" ]]; then
   sed -i '0,/border: .*/s//border: #ff9e64;/' $Powermenu_Rofi_DIR/styles/colors.rasi
 
   # Changing colors of powermenu of zsh-prompt
-  sed -i '34,36 s/blue/yellow/g' $Zsh_DIR/zsh-prompt
-  sed -i '34,36 s/red/magenta/1' $Zsh_DIR/zsh-prompt
+  sed -i '34,36 s/yellow/blue/g' $Zsh_DIR/zsh-prompt
+  sed -i '34,36 s/magenta/red/1' $Zsh_DIR/zsh-prompt
 
   # handle command
   notify-send "Change Theme" "Tokyo Dark" --icon="$Icon_Theme_DIR/Tokyo-dark.png" -t 1500 -a "System"

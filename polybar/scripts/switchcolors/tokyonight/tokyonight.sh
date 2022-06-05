@@ -21,6 +21,7 @@ if  [[ $1 = "tokyonight" ]]; then
   sed -i 's/xwindow = .*/xwindow = #356eb0/g' $ColorDIR
   sed -i 's/change_theme = .*/change_theme = #356eb0/g' $ColorDIR
   sed -i 's/cpu = .*/cpu = #00e1ff/g' $ColorDIR
+  sed -i 's/date = .*/date = #fffc05/g' $ColorDIR
   sed -i 's/border = .*/border = #fa8541/g' $ColorDIR
   sed -i 's/i3-seperator = .*/i3-seperator = #2d9683/g' $ColorDIR
   sed -i 's/i3-unfocus = .*/i3-unfocus = #fc607c/g' $ColorDIR
@@ -71,4 +72,5 @@ if  [[ $1 = "tokyonight" ]]; then
   pkill dunst
   dunst &
   $HOME/.config/polybar/launch.sh
+  zsh
 fi

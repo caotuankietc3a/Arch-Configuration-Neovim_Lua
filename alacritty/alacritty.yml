@@ -138,31 +138,41 @@ schemes:
   # Default colors
   dracula: &dracula
     primary:
-      # background: '#282a36'
-      background: '#141414'
-      foreground: '#f8f8f2'
+      background: '#000000'
+      foreground: '#0abdc6'
 
     # Normal colors
     normal:
-      black:   '#000000'
-      red:     '#ff5555'
-      green:   '#50fa7b'
-      yellow:  '#f1fa8c'
-      blue:    '#caa9fa'
-      magenta: '#ff79c6'
-      cyan:    '#8be9fd'
-      white:   '#bfbfbf'
+      black:   '#123e7c'
+      red:     '#ff0000'
+      green:   '#d300c4'
+      yellow:  '#f57800'
+      blue:    '#123e7c'
+      magenta: '#711c91'
+      cyan:    '#0abdc6'
+      white:   '#d7d7d5'
 
     # Bright colors
     bright:
-      black:   '#575b70'
-      red:     '#ff6e67'
-      green:   '#5af78e'
-      yellow:  '#f4f99d'
-      blue:    '#caa9fa'
-      magenta: '#ff92d0'
-      cyan:    '#9aedfe'
-      white:   '#e6e6e6'
+      black:   '#1c61c2'
+      red:     '#ff0000'
+      green:   '#d300c4'
+      yellow:  '#f57800'
+      blue:    '#00ff00'
+      magenta: '#711c91'
+      cyan:    '#0abdc6'
+      white:   '#d7d7d5'
+
+    # dim colors
+    dim:
+      black:   '#1c61c2'
+      red:     '#ff0000'
+      green:   '#d300c4'
+      yellow:  '#f57800'
+      blue:    '#123e7c'
+      magenta: '#711c91'
+      cyan:    '#0abdc6'
+      white:   '#d7d7d5'
 
 ###########################################     GRUVBOX   #################################
 
