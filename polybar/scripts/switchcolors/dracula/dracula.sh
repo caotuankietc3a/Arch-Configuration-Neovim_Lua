@@ -54,10 +54,10 @@ if  [[ $1 = "dracula" ]]; then
   sed -i -e 's/Spaces/Anime/g' $I3DIR
 
   # Changing colors of powermenu of rofi
-  sed -i '0,/background: .*/s//background: #32344a80;/' $Powermenu_Rofi_DIR/styles/colors.rasi
+  sed -i '0,/background: .*/s//background: #141414;/' $Powermenu_Rofi_DIR/styles/colors.rasi
   sed -i '0,/background-inputbar: .*/s//background-inputbar: #2A3950ff;/' $Powermenu_Rofi_DIR/styles/colors.rasi
   sed -i '0,/foreground: .*/s//foreground: #aeb1b8;/' $Powermenu_Rofi_DIR/styles/colors.rasi
-  sed -i '0,/border: .*/s//border: #7da6ff;/' $Powermenu_Rofi_DIR/styles/colors.rasi
+  sed -i '0,/border: .*/s//border: #671e70;/' $Powermenu_Rofi_DIR/styles/colors.rasi
 
   # Changing colors of powermenu of zsh-prompt
   sed -i '34,36 s/blue/yellow/g' $Zsh_DIR/zsh-prompt
