@@ -176,6 +176,7 @@ local mappings = {
 		n = { "<cmd>lua _NODE_TOGGLE()<cr>", "Node" },
 		c = { "<cmd>lua _CPP_TOGGLE()<cr>", "Cpp" },
 		C = { "<cmd>lua _CPP_FILEs_TOGGLE()<cr>", "Cpp with arguments" },
+		j = { "<cmd>lua _JAVA_TOGGLE()<cr>", "Java" },
 		u = { "<cmd>lua _NCDU_TOGGLE()<cr>", "NCDU" },
 		t = { "<cmd>lua _HTOP_TOGGLE()<cr>", "Htop" },
 		p = { "<cmd>lua _PYTHON_TOGGLE()<cr>", "Python" },

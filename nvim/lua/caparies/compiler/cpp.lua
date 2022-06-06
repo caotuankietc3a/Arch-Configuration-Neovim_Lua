@@ -31,11 +31,11 @@ function _CPP_FILEs_TOGGLE()
 	for i = 1, tonumber(no_arg), 1 do
 		arg_array[i] = vim.fn.input("argv[" .. i .. "] = ")
 	end
-	local arg_val = ""
-	for i = 1, tonumber(no_arg) - 1, 1 do
-		arg_val = arg_array[i] .. " " .. arg_array[i + 1]
-	end
 
+	local arg_val = ""
+	for i = 1, tonumber(no_arg), 1 do
+		arg_val = arg_val .. " " .. arg_array[i]
+	end
 	local cpp_with_files = Terminal:new({
 		cmd = get_user_input(arg_val),
 		direction = "float",
