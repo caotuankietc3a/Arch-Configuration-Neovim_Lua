@@ -5,21 +5,9 @@ end
 
 local Terminal = require("toggleterm.terminal").Terminal
 
-local command_cpp = vim.api.nvim_exec(
-	[[
-  let s:cmd = printf("%s %s %s %s\n", "g++ -std=c++11", expand('%'),  "&& ./a.out", "&& rm -f ./a.out")
-  function! s:My_Command_Cpp(cmd)
-    echo a:cmd
-  endfunction
-
-  call s:My_Command_Cpp(s:cmd)
-]],
-	true
-)
-
 function _CPP_TOGGLE()
 	local cpp = Terminal:new({
-		cmd = command_cpp,
+		cmd = vim.fn.printf("%s %s %s %s\n", "g++ -std=c++11", vim.fn.expand("%"), "&& ./a.out", "&& rm -rf a.out"),
 		direction = "float",
 	})
 	cpp:toggle()
