@@ -7,7 +7,7 @@ window:
    y: 1
   padding:
    x: 5
-   y: 5
+   y: 10
   dynamic_padding: true
   # Values for `decorations`:
   #     - full: Borders and title bar

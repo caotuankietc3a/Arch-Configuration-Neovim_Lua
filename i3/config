@@ -134,7 +134,7 @@ bindsym $mod+8 workspace number $ws8; exec $changeWorkspace; $randompicture
 bindsym $mod+9 workspace number $ws9; exec $changeWorkspace; $randompicture
 bindsym $mod+0 workspace number $ws10; exec $changeWorkspace; $randompicture
 
-assign [class="Brave-browser"] $ws3
+assign [class="Google-chrome"] $ws3
 assign [class="Org.gnome.Nautilus"] $ws4
 assign [class="MongoDB Compass"] $ws9
 

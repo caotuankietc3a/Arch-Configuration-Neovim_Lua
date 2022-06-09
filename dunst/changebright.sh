@@ -21,11 +21,11 @@ function send_notification() {
 
 case $1 in
 up)
-  light -A 1
-	send_notification $1
+  backlight_control +1
+  send_notification $1
 	;;
 down)
-	light -U 1
+  backlight_control -1
 	send_notification $1
 	;;
 esac

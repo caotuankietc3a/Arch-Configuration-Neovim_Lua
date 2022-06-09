@@ -62,7 +62,7 @@ textbox-prompt-colon {
   str: "☣ 𝑆𝑒𝑙𝑒𝑐𝑡 𝑇ℎ𝑒𝑚𝑒 ☠";
 	text-color:	@default-border;
   padding: 0% 0 1% 0%;
-  margin: 1% 0% 0.5% 1%;
+  margin: 1% 0% 0% 3%;
   font: "Fira Code 20";
 }
 
