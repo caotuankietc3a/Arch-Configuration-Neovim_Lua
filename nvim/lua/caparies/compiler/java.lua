@@ -24,18 +24,15 @@ local get_table_length = function(T)
 	return count
 end
 
-function _JAVA_COMPILER()
-	vim.cmd("!javac *.java")
-	vim.cmd("w!")
-	print("Compile Java files sucessfully!!!")
-end
-
 function _JAVA_TOGGLE()
+	-- vim.cmd("!mkdir src")
+	-- vim.cmd("!mv ./* src 2>/dev/null")
 	local cur_dir = vim.fn.expand("%:p")
+	vim.cmd("!javac -d ../bin " .. cur_dir)
 	local new_table = split_string(cur_dir, "//")
 	local cur_file = split_string(new_table[get_table_length(new_table)], ".")[1]
 	local java = Terminal:new({
-		cmd = vim.fn.printf("%s %s %s %s\n", "javac", cur_dir, "&& java " .. cur_file, "&& rm -rf *.class"),
+		cmd = vim.fn.printf("%s %s %s\n", "java -cp ../bin/ ", cur_file, "&& rm -rf ../bin"),
 		direction = "float",
 	})
 	java:toggle()
