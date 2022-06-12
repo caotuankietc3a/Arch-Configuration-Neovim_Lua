@@ -31,7 +31,10 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 # load Xresources
-source $HOME/.config/X11/.Xresources
+# source $HOME/.config/X11/.Xresources
 
 # load xprofile
 source $HOME/.config/X11/.xprofile
+
+# must be in bottom
+exec i3

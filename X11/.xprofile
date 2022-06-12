@@ -60,6 +60,3 @@ copyq &
 export ZDOTDIR=$HOME/.config/zsh
 # source "$HOME/.config/zsh/.zshrc"
 # export LC_ALL=en_US.UTF-8
-
-# must be in bottom
-exec i3
