@@ -52,8 +52,7 @@ if  [[ $1 = "tokyodark" ]]; then
   sed -i '0,/frame_color = .*/s//frame_color = "#FFB74D"/' $Dunst_DIR/dunstrc
 
   # Changing Wallpapers
-  sed -i -e 's/Anime/Spaces/g' $I3DIR
-  feh --bg-scale --randomize $Arch_Config_DIR/Spaces/*
+  sed -i '0,/set $randompicture exec feh --bg-scale --randomize .*/s//set $randompicture exec feh --bg-scale --randomize ~\/.config\/Arch\\ Config\/Spaces\/*/' $I3DIR
 
   # Changing colors of powermenu of rofi
   sed -i '0,/background: .*/s//background: #14141410;/' $Powermenu_Rofi_DIR/styles/colors.rasi

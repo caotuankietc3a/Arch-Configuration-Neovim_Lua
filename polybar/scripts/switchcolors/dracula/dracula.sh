@@ -51,7 +51,8 @@ if  [[ $1 = "dracula" ]]; then
   sed -i '0,/frame_color = .*/s//frame_color = "#671e70"/' $Dunst_DIR/dunstrc
 
   # Changing Wallpapers
-  sed -i -e 's/Spaces/Anime/g' $I3DIR
+  sed -i '0,/set $randompicture exec feh --bg-scale --randomize .*/s//set $randompicture exec feh --bg-scale --randomize ~\/.config\/Arch\\ Config\/Fantacy\/*/' $I3DIR
+
 
   # Changing colors of powermenu of rofi
   sed -i '0,/background: .*/s//background: #141414;/' $Powermenu_Rofi_DIR/styles/colors.rasi
@@ -68,7 +69,7 @@ if  [[ $1 = "dracula" ]]; then
   sleep 1
   i3-msg reload
   flameshot config -m "#c678dd"
-  feh --bg-scale --randomize ~/.config/Arch\ Config/Anime/*
+  feh --bg-scale --randomize ~/.config/Arch\ Config/Fantacy/*
   pkill dunst
   dunst &
   $HOME/.config/polybar/launch.sh
