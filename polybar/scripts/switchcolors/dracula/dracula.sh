@@ -65,7 +65,7 @@ if  [[ $1 = "dracula" ]]; then
   sed -i '34,36 s/red/magenta/1' $Zsh_DIR/zsh-prompt
 
   # handle command
-  notify-send "Change Theme" "Dracula" --icon="$Icon_Theme_DIR/Tokyo-night.png" -t 1500 -a "System"
+  notify-send "Change Theme" "Dracula" --icon="$Icon_Theme_DIR/Dracula.png" -t 1500 -a "System"
   sleep 1
   i3-msg reload
   flameshot config -m "#c678dd"

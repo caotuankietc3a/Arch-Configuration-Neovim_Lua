@@ -280,7 +280,3 @@ bindsym $mod+c exec copyq menu
 
 # =========================== Conky =========================
 exec_always $HOME/.conky/conky-startup.sh
-
-# =========================== Pass =====================
-# caotuankietc3a
-# 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

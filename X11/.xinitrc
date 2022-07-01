@@ -36,5 +36,8 @@ fi
 # load xprofile
 source $HOME/.config/X11/.xprofile
 
+eval $(gnome-keyring-daemon --start)
+export SSH_AUTH_SOCK
+
 # must be in bottom
 exec i3
