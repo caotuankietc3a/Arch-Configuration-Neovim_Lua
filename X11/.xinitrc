@@ -40,4 +40,6 @@ eval $(gnome-keyring-daemon --start)
 export SSH_AUTH_SOCK
 
 # must be in bottom
-exec i3
+# exec i3
+# exec dwm
+exec bspwm

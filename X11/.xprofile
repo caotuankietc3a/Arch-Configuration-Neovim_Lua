@@ -1,5 +1,5 @@
 # Random Photo Every Login
-# feh --bg-fill --randomize ~/Pictures/Tokyo-Night/*
+# feh --bg-scale --randomize ~/.config/Arch\ Config/Spaces/*
 
 # Monitor Config
 # xrandr --auto --output DVI-D-0 --mode 2560x1440 --left-of HDMI-0
@@ -12,7 +12,7 @@
 
 # Environment variables set everywhere
 export EDITOR="nvim"
-export TERMINAL="st"
+export TERMINAL="alacritty"
 export BROWSER="brave"
 
 # For QT Themes
@@ -46,6 +46,9 @@ pasystray &
 
 # Copyq
 copyq &
+
+# picom
+picom &
 
 # Screenkey applet (this will break everything)
 # screenkey --start-disabled
