@@ -1,11 +1,16 @@
 #!/bin/sh
 
 userresources=$HOME/.config/X11/.Xresources
-userxprofile=$HOME/.Xmodmap
+userprofile=$HOME/.config/X11/.xprofile
+usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmap
 
 # merge in defaults and keymaps
+if [ -f "$userprofile" ]; then
+  source "$userprofile"
+fi
+
 if [ -f $sysresources ]; then
   xrdb -merge $sysresources
 fi
@@ -34,10 +39,10 @@ fi
 # source $HOME/.config/X11/.Xresources
 
 # load xprofile
-source $HOME/.config/X11/.xprofile
+# source $HOME/.config/X11/.xprofile
 
-eval $(gnome-keyring-daemon --start)
-export SSH_AUTH_SOCK
+# eval $(gnome-keyring-daemon --start)
+# export SSH_AUTH_SOCK
 
 # must be in bottom
 # exec i3

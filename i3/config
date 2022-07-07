@@ -121,7 +121,7 @@ set $ws10 "10"
 set $changeWorkspace "$HOME/.config/polybar/setup.sh"
 
 # switch to workspace
-set $randompicture exec feh --bg-scale --randomize ~/.config/Arch\ Config/Anime/*
+set $randompicture exec feh --bg-scale --randomize ~/.config/Arch\ Config/Spaces/*
 
 bindsym $mod+1 workspace number $ws1; exec $changeWorkspace; $randompicture
 bindsym $mod+2 workspace number $ws2; exec $changeWorkspace; $randompicture
@@ -202,7 +202,7 @@ exec_always feh --bg-scale --randomize ~/.config/Arch\ Config/Spaces/*
 set $bg #2c2c2e
 set $fg #9f9f9f
 set $hi #efef8f
-set $ac #61AFEF
+set $ac #fa8541
 set $tx #040404
 set $ia #8f8f8f
 set $be #8faf9f
