@@ -7,21 +7,14 @@ local Terminal = require("toggleterm.terminal").Terminal
 
 function _CPP_TOGGLE()
 	local cpp = Terminal:new({
-		cmd = vim.fn.printf("%s %s %s %s\n", "g++ -std=c++11", vim.fn.expand("%:p"), "&& ./a.out", "&& rm -rf a.out"),
+		cmd = vim.fn.printf("%s %s %s %s\n", "g++", vim.fn.expand("%:p"), "&& ./a.out", "&& rm -rf a.out"),
 		direction = "float",
 	})
 	cpp:toggle()
 end
 
 local get_user_input = function(arg_val)
-	local cmd = vim.fn.printf(
-		"%s %s %s %s %s\n",
-		"g++ -std=c++11",
-		vim.fn.expand("%:p"),
-		"&& ./a.out",
-		arg_val,
-		"&& rm -rf a.out"
-	)
+	local cmd = vim.fn.printf("%s %s %s %s %s\n", "g++", vim.fn.expand("%:p"), "&& ./a.out", arg_val, "&& rm -rf a.out")
 	return cmd
 end
 

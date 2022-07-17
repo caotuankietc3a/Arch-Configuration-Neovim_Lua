@@ -163,7 +163,7 @@ super + s
 super + {o,n}
   bspc rule --add Alacritty follow=on rectangle=800x600+150+150 state=floating && $TERMINAL -e {ranger, nvim} &&  bspc rule -r Alacritty
 super + a
-  bspc rule --add Alacritty follow=on rectangle=800x600+250+250 state=floating && $TERMINAL && bspc rule -r Alacritty
+  bspc rule --add Alacritty follow=on rectangle=800x600+150+150 state=floating && $TERMINAL && bspc rule -r Alacritty
 
 super + r
  bspc rule -r Alacritty

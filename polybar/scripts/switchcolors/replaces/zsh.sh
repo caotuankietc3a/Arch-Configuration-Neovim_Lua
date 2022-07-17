@@ -2,7 +2,7 @@
 
 ALDIR="$HOME/.config/alacritty/alacritty.yml"
 NvimDIR="$HOME/.config/nvim/lua/caparies/colorscheme.lua"
-ColorDIR="$HOME/.config/polybar/colours/colourful.ini"
+ColorlsDIR="$HOME/.config/colorls/dark_colors.yaml"
 Zsh_DIR="$HOME/.config/zsh"
 
 function zsh_changes() {

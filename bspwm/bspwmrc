@@ -53,6 +53,7 @@ bspc rule --add Google-chrome  desktop='3' follow=on private=on rectangle=900x80
 bspc rule --add Brave-browser desktop='3' follow=on rectangle=900x800+30+250 state=floating
 bspc rule -a Messenger\ call\ -\ Brave rectangle=450x800+1400+50 state=floating
 bspc rule -a Org.gnome.Nautilus desktop='4' follow=on rectangle=900x800+507+130 state=floating
+bspc rule -a MongoDB\ Compass desktop='9' follow=on center=true state=floating
 
 
 # Polybar
