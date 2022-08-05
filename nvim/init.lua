@@ -23,6 +23,10 @@ require("caparies.colorizer")
 require("caparies.emet")
 require("caparies.autotags")
 
+-- Sessions
+require("caparies.session-lens")
+require("caparies.auto-session")
+
 -- Complier
 require("caparies.compiler")
 

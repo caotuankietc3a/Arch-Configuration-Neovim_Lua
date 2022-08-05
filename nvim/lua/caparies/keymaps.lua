@@ -101,3 +101,8 @@ keymap("n", "fo", "zR", opts)
 
 -- Auto load nvim color_scheme
 keymap("n", "<C-s>", "<Cmd>source ~/.config/nvim/lua/caparies/colorscheme.lua<CR>", opts)
+
+-- Save and quit
+keymap("n", ";w", ":wq<CR>", opts)
+-- Quit
+keymap("n", ";q", ":q!<CR>", opts)

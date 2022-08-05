@@ -24,11 +24,26 @@ local get_table_length = function(T)
 	return count
 end
 
+function GetPWD()
+	local array_split = split_string(vim.fn.expand("%:p"), "/")
+	local pwd = "/"
+	for index, value in pairs(array_split) do
+		if index ~= #array_split then
+			pwd = pwd .. value
+		end
+		if index < #array_split - 1 then
+			pwd = pwd .. "/"
+		end
+	end
+	return pwd
+end
+
 function _JAVA_TOGGLE()
 	-- vim.cmd("!mkdir src")
 	-- vim.cmd("!mv ./* src 2>/dev/null")
 	local cur_dir = vim.fn.expand("%:p")
-	vim.cmd("!javac -d ../bin " .. cur_dir)
+	local pwd = GetPWD()
+	vim.cmd("!javac -d ../bin " .. pwd .. "/*.java")
 	local new_table = split_string(cur_dir, "//")
 	local cur_file = split_string(new_table[get_table_length(new_table)], ".")[1]
 	local java = Terminal:new({
