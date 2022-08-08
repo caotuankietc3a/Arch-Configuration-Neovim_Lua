@@ -43,11 +43,12 @@ function _JAVA_TOGGLE()
 	-- vim.cmd("!mv ./* src 2>/dev/null")
 	local cur_dir = vim.fn.expand("%:p")
 	local pwd = GetPWD()
-	vim.cmd("!javac -d ../bin " .. pwd .. "/*.java")
+	-- vim.cmd("!javac -d ./bin " .. pwd .. "/*.java")
+	local command = vim.fn.printf("javac -d ./bin " .. pwd .. "/*.java ")
 	local new_table = split_string(cur_dir, "//")
 	local cur_file = split_string(new_table[get_table_length(new_table)], ".")[1]
 	local java = Terminal:new({
-		cmd = vim.fn.printf("%s %s %s\n", "java -cp ../bin/ ", cur_file, "&& rm -rf ../bin"),
+		cmd = vim.fn.printf("%s %s %s %s\n", command, "&& java -cp ./bin/ ", cur_file, "&& rm -rf ./bin"),
 		direction = "float",
 	})
 	java:toggle()
