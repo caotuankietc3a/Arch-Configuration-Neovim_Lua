@@ -103,6 +103,6 @@ keymap("n", "fo", "zR", opts)
 keymap("n", "<C-s>", "<Cmd>source ~/.config/nvim/lua/caparies/colorscheme.lua<CR>", opts)
 
 -- Save and quit
-keymap("n", ";w", ":wq<CR>", opts)
+keymap("n", ";w", ":wq!<CR>", opts)
 -- Quit
 keymap("n", ";q", ":q!<CR>", opts)
