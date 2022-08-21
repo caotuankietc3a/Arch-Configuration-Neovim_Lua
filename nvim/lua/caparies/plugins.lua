@@ -130,7 +130,7 @@ return packer.startup(function(use)
 	-- use("styled-components/vim-styled-components", { branch = "main" })
 
 	-- Java
-	-- use("mfussenegger/nvim-jdtls")
+	use("mfussenegger/nvim-jdtls")
 
 	-- Session
 	use("rmagatti/session-lens")
