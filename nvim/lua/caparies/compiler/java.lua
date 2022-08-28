@@ -47,8 +47,30 @@ function _JAVA_TOGGLE()
 	local command = vim.fn.printf("javac -d ./bin " .. pwd .. "/*.java ")
 	local new_table = split_string(cur_dir, "//")
 	local cur_file = split_string(new_table[get_table_length(new_table)], ".")[1]
+	print(cur_file)
 	local java = Terminal:new({
 		cmd = vim.fn.printf("%s %s %s %s\n", command, "&& java -cp ./bin/ ", cur_file, "&& rm -rf ./bin"),
+		direction = "float",
+	})
+	java:toggle()
+end
+
+function _JAVA_PACKAGE_TOGGLE()
+	local cur_dir = vim.fn.expand("%:p")
+	local pwd = GetPWD()
+	local package = '`grep "package" ' .. cur_dir .. " | awk '{print $2}' | sed \"s/;//\"`"
+	local command = vim.fn.printf("javac -d ./bin " .. pwd .. "/*.java ")
+	local new_table = split_string(cur_dir, "//")
+	local cur_file = split_string(new_table[get_table_length(new_table)], ".")[1]
+	print(cur_file)
+	local java = Terminal:new({
+		cmd = vim.fn.printf(
+			"%s %s %s %s\n",
+			command,
+			"&& java -cp ./bin/ ",
+			package .. "." .. cur_file,
+			"&& rm -rf ./bin"
+		),
 		direction = "float",
 	})
 	java:toggle()
