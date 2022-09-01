@@ -30,6 +30,9 @@ require("caparies.auto-session")
 -- Complier
 require("caparies.compiler")
 
+-- Sql
+require("caparies.sql")
+
 -- .local/share/nvim/site/pack/packer/start/
 
 if vim.fn.exists("g:vscode") ~= 0 then

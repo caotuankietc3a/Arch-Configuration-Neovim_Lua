@@ -254,6 +254,11 @@ _G.packer_plugins = {
     path = "/home/caparies/.local/share/nvim/site/pack/packer/start/session-lens",
     url = "https://github.com/rmagatti/session-lens"
   },
+  ["sqls.nvim"] = {
+    loaded = true,
+    path = "/home/caparies/.local/share/nvim/site/pack/packer/start/sqls.nvim",
+    url = "https://github.com/nanotee/sqls.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/caparies/.local/share/nvim/site/pack/packer/start/telescope.nvim",

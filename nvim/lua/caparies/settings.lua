@@ -36,6 +36,7 @@ local settings = {
 	-- foldmethod = "marker",
 	-- foldmarker = "{,}",
 	foldmethod = "indent",
+	--[[ foldmethod = "manual", ]]
 }
 
 vim.opt.shortmess:append("c")
