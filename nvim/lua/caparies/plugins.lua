@@ -47,7 +47,27 @@ return packer.startup(function(use)
 	use("windwp/nvim-autopairs") -- Autopairs, integrates with both cmp and treesitter
 	use("numToStr/Comment.nvim") -- Easily comment stuff
 	use("kyazdani42/nvim-web-devicons")
-	use("kyazdani42/nvim-tree.lua")
+
+	-- Nvim-tree
+	--[[ use("kyazdani42/nvim-tree.lua") ]]
+
+	-- Neo-tree
+	use("nvim-lua/plenary.nvim")
+	use("MunifTanjim/nui.nvim")
+	use({
+		"nvim-neo-tree/neo-tree.nvim",
+		branch = "v2.x",
+		requires = {
+			"nvim-lua/plenary.nvim",
+			"kyazdani42/nvim-web-devicons", -- not strictly required, but recommended
+			"MunifTanjim/nui.nvim",
+		},
+	})
+
+	-- Winbar
+	--[[ use("fgheng/winbar.nvim") ]]
+	-- need neovim v8
+
 	use("akinsho/bufferline.nvim")
 	use("moll/vim-bbye")
 	use("nvim-lualine/lualine.nvim")

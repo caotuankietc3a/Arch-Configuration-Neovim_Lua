@@ -70,6 +70,9 @@ lualine.setup({
 		section_separators = { left = "", right = "" },
 		disabled_filetypes = { "alpha", "dashboard", "NvimTree", "Outline" },
 		always_divide_middle = true,
+		disabled_filetypes = { -- Filetypes to disable lualine for.
+			"Neotree",
+		},
 	},
 	sections = {
 		lualine_a = { mode },
