@@ -52,8 +52,6 @@ return packer.startup(function(use)
 	--[[ use("kyazdani42/nvim-tree.lua") ]]
 
 	-- Neo-tree
-	use("nvim-lua/plenary.nvim")
-	use("MunifTanjim/nui.nvim")
 	use({
 		"nvim-neo-tree/neo-tree.nvim",
 		branch = "v2.x",
@@ -61,6 +59,10 @@ return packer.startup(function(use)
 			"nvim-lua/plenary.nvim",
 			"kyazdani42/nvim-web-devicons", -- not strictly required, but recommended
 			"MunifTanjim/nui.nvim",
+			{
+				"s1n7ax/nvim-window-picker",
+				tag = "v1.*",
+			},
 		},
 	})
 
