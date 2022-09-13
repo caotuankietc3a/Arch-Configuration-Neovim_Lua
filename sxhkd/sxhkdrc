@@ -81,7 +81,7 @@ super + {grave,Tab}
 # 	bspc wm -h on
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
-	bspc {desktop -f,node -d} '^{1-9,10}' && feh --bg-scale --randomize ~/.config/Arch\ Config/Anime/*
+	bspc {desktop -f,node -d} '^{1-9,10}' && feh --bg-scale --randomize ~/.config/Arch\ Config/Spaces/*
 
 #
 # preselect
@@ -127,11 +127,12 @@ super + shift + s
  flameshot gui
 
 # Volume in PulseAudio
-super + equal
+# super + equal
+super + F3
  ~/.config/dunst/changevolume.sh up
-super + minus
+super + F2
  ~/.config/dunst/changevolume.sh down
-super + 0
+super + F1
  ~/.config/dunst/changevolume.sh mute
 
 # Light
