@@ -48,7 +48,7 @@ pasystray &
 copyq &
 
 # picom
-picom &
+picom --experimental-backends &
 
 # Screenkey applet (this will break everything)
 # screenkey --start-disabled
