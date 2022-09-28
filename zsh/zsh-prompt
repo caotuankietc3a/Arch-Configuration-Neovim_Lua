@@ -1,4 +1,5 @@
 #!/bin/sh
+# source "$ZDOTDIR/zsh-functions"
 
 ## autoload vcs and colors
 autoload -Uz vcs_info
@@ -27,21 +28,15 @@ zstyle ':vcs_info:git*+set-message:*' hooks git-untracked
     fi
 }
 
-zsh_prompt_home_indicator() {
-    if [[ "$PWD" = "$HOME" ]];then
-        echo "  %c/ "
-    else
-        echo "  %c/ "
-    fi
-}
+
 
 zstyle ':vcs_info:*' check-for-changes true
 # zstyle ':vcs_info:git:*' formats " %r/%S %b %m%u%c "
-zstyle ':vcs_info:git:*' formats " %{$fg[blue]%}(%{$fg[red]%}%m%u%c%{$fg[yellow]%}%{$fg[magenta]%} %b%{$fg[blue]%})"
+zstyle ':vcs_info:git:*' formats " %{$fg[blue]%}(%{$fg[red]%}%m%u%c%{$fg[blue]%}%{$fg[red]%} %b%{$fg[blue]%})"
 
 # format our main prompt for hostname current folder, and permissions.
 PROMPT="%B%{$fg[blue]%}   %{$fg[white]%}%n%{$fg[red]%}  %{$fg[white]%}%m%{$fg[blue]%}  
-%(?:%{$fg_bold[green]%}  :%{$fg_bold[red]%}  )%{$fg[cyan]%}$(zsh_prompt_home_indicator)%{$reset_color%}"
+%(?:%{$fg_bold[green]%}  :%{$fg_bold[red]%}  )%{$fg[cyan]%}  %c/ %{$reset_color%}"
 
 # PROMPT="%{$fg[green]%}%n@%m %~ %{$reset_color%}%#> "
 PROMPT+="\$vcs_info_msg_0_ "

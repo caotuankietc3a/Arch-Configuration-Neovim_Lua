@@ -93,10 +93,10 @@ neo_tree.setup({
 			["<cr>"] = "open",
 			--[[ ["l"] = "open", ]]
 			["l"] = "open_with_window_picker",
-			["S"] = "open_split",
-			["s"] = "open_vsplit",
-			-- ["S"] = "split_with_window_picker",
-			-- ["s"] = "vsplit_with_window_picker",
+			--[[ ["S"] = "open_split", ]]
+			--[[ ["s"] = "open_vsplit", ]]
+			["S"] = "split_with_window_picker",
+			["s"] = "vsplit_with_window_picker",
 			["t"] = "open_tabnew",
 			["w"] = "open_with_window_picker",
 			["C"] = "close_node",

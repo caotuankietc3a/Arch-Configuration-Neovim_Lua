@@ -81,7 +81,7 @@ super + {grave,Tab}
 # 	bspc wm -h on
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
-	bspc {desktop -f,node -d} '^{1-9,10}' && feh --bg-scale --randomize ~/.config/Arch\ Config/Spaces/*
+	bspc {desktop -f,node -d} '^{1-9,10}' && feh --bg-scale --randomize ~/.config/Arch\ Config/Anime/*
 
 #
 # preselect
@@ -147,10 +147,13 @@ XF86MonBrightnessUp
 super + bracket{left}
  ~/.config/i3/changelanguage/run.sh
 
-
 # Change theme
 super + backslash
  ~/.config/polybar/scripts/switchcolors/color_switch.sh
+
+# Toggle Caplock
+super + Caps_Lock
+ ~/.config/i3/togglecapslock/run.sh
 
 # copyq
 super + c
