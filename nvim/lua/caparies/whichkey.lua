@@ -188,6 +188,20 @@ local mappings = {
 		h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
 		v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
 	},
+
+	j = {
+		name = "Java",
+		--[[ o = { "<Cmd>lua require'jdtls'.organize_imports()<CR>", "Organize Imports" }, ]]
+		--[[ v = { "<Cmd>lua require('jdtls').extract_variable()<CR>", "Extract Variable" }, ]]
+		--[[ c = { "<Cmd>lua require('jdtls').extract_constant()<CR>", "Extract Constant" }, ]]
+		--[[ t = { "<Cmd>lua require'jdtls'.test_nearest_method()<CR>", "Test Method" }, ]]
+		--[[ T = { "<Cmd>lua require'jdtls'.test_class()<CR>", "Test Class" }, ]]
+		u = { "<Cmd>JdtUpdateConfig<CR>", "Update Config" },
+		s = { "<Cmd>JdtShowLogs<CR>", "Show Logs" },
+		b = { "<Cmd>JdtBytecode<CR>", "Byte Code" },
+		r = { "<Cmd>JdtSetRuntime<CR>", "Run Time" },
+		w = { "<Cmd>JdtWipeDataAndRestart<CR>", "Wipe Restart" },
+	},
 }
 
 which_key.setup(setup)
