@@ -164,6 +164,10 @@ return packer.startup(function(use)
 	-- Mysql
 	use("nanotee/sqls.nvim")
 
+	-- Notify
+	use("rcarriga/nvim-notify")
+	use("ryanoasis/vim-devicons")
+
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end

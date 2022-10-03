@@ -41,6 +41,9 @@ local function save_profiles(threshold)
       results[i] = elem[1] .. ' took ' .. elem[2] .. 'ms'
     end
   end
+  if threshold then
+    table.insert(results, '(Only showing plugins that took longer than ' .. threshold .. ' ms ' .. 'to load)')
+  end
 
   _G._packer.profile_output = results
 end
@@ -216,6 +219,11 @@ _G.packer_plugins = {
     path = "/home/caparies/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-notify"] = {
+    loaded = true,
+    path = "/home/caparies/.local/share/nvim/site/pack/packer/start/nvim-notify",
+    url = "https://github.com/rcarriga/nvim-notify"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/caparies/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
@@ -305,6 +313,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/caparies/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
+  },
+  ["vim-devicons"] = {
+    loaded = true,
+    path = "/home/caparies/.local/share/nvim/site/pack/packer/start/vim-devicons",
+    url = "https://github.com/ryanoasis/vim-devicons"
   },
   ["vim-visual-multi"] = {
     loaded = true,

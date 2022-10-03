@@ -24,6 +24,7 @@ require("caparies.winbar")
 require("caparies.colorizer")
 require("caparies.emet")
 require("caparies.autotags")
+require("caparies.notify")
 
 -- Sessions
 require("caparies.session-lens")
