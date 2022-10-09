@@ -89,7 +89,7 @@ keymap("n", "<leader>\\", ":vsplit<CR>", opts)
 keymap("n", "<leader>/", ":split<CR>", opts)
 
 -- Auto formatting
-keymap("n", "<C-f>", ":lua vim.lsp.buf.formatting()<CR>", opts)
+keymap("n", "<C-f>", ":lua vim.lsp.buf.format({async = true})<CR>", opts)
 
 -- Rotate window
 keymap("n", "<A-o>", "<C-w>r", opts)
