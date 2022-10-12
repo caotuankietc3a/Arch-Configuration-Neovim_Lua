@@ -27,7 +27,7 @@ function zsh_changes() {
     sed -i '34,36 s/blue/yellow/g' $Zsh_DIR/zsh-prompt
     sed -i '34,36 s/red/magenta/1' $Zsh_DIR/zsh-prompt
     # replacing theme in neovim
-    sed -i '0,/colorscheme .*/s//colorscheme dracula/' $NvimDIR
+    sed -i '0,/colorscheme .*/s//colorscheme catppuccin/' $NvimDIR
   elif [ $1 == "tokyo-night" ]
   then
     # Changing colors of zsh and clorls

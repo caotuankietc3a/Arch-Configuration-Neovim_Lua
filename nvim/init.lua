@@ -9,7 +9,7 @@ require("caparies.treesitter")
 require("caparies.autopairs")
 require("caparies.comment")
 require("caparies.gitsigns")
-require("caparies.nvim-tree")
+--[[ require("caparies.nvim-tree") ]]
 require("caparies.neo-tree")
 require("caparies.bufferline")
 require("caparies.lualine")
@@ -39,5 +39,5 @@ require("caparies.sql")
 -- .local/share/nvim/site/pack/packer/start/
 
 if vim.fn.exists("g:vscode") ~= 0 then
-	vim.cmd("source ~/.config/nvim/lua/caparies/vscode-keybindings/settings.vim")
+  vim.cmd("source ~/.config/nvim/lua/caparies/vscode-keybindings/settings.vim")
 end

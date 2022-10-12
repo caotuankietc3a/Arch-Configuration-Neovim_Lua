@@ -1,6 +1,6 @@
 local null_ls_status_ok, null_ls = pcall(require, "null-ls")
 if not null_ls_status_ok then
-	return
+  return
 end
 
 -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting
@@ -9,22 +9,22 @@ local formatting = null_ls.builtins.formatting
 local diagnostics = null_ls.builtins.diagnostics
 
 null_ls.setup({
-	debug = false,
-	on_attach = function(client)
-		if client.server_capabilities.documentFormattingProvider then
-			vim.cmd([[
+  debug = false,
+  on_attach = function(client)
+    if client.server_capabilities.documentFormattingProvider then
+      vim.cmd([[
             augroup LspFormatting
                 autocmd! * <buffer>
-                autocmd BufWritePre <buffer> lua vim.lsp.buf.format({async = true})
+                autocmd BufWritePre <buffer> lua vim.lsp.buf.format()
             augroup END
             ]])
-		end
-	end,
-	sources = {
-		-- formatting.prettier.with({ extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } }),
-		formatting.prettier.with({ extra_args = {} }),
-		formatting.stylua,
-		formatting.google_java_format,
-		diagnostics.flake8,
-	},
+    end
+  end,
+  sources = {
+    -- formatting.prettier.with({ extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } }),
+    formatting.prettier.with({ extra_args = {} }),
+    formatting.stylua,
+    formatting.google_java_format,
+    diagnostics.flake8,
+  },
 })
