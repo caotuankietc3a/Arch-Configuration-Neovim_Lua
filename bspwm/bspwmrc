@@ -59,6 +59,8 @@ bspc rule -a MongoDB\ Compass desktop='9' follow=on center=true state=floating
 bspc rule -a Mysql-workbench-bin desktop='9' follow=on center=true state=floating
 bspc rule -a Eclipse desktop='2' follow=on center=true state=floating
 bspc rule -a Code desktop='1' follow=on center=true state=floating
+bspc rule -a Postman desktop='2' follow=on center=true state=floating
+
 
 # Random Picture Every Login
 feh --bg-scale --randomize ~/.config/Arch\ Config/Anime/*

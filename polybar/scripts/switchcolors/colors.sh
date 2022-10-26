@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo "dfsafsafsafas"
-echo $1
 source $HOME/.config/polybar/scripts/switchcolors/replaces/polybar.sh
 source $HOME/.config/polybar/scripts/switchcolors/replaces/rofi.sh
 source $HOME/.config/polybar/scripts/switchcolors/replaces/dunst.sh

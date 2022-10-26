@@ -43,6 +43,7 @@ fi
 
 eval $(gnome-keyring-daemon --start)
 export SSH_AUTH_SOCK
+export _JAVA_AWT_WM_NONREPARENTING=1
 
 # must be in bottom
 # exec i3

@@ -6,7 +6,7 @@ window:
    x: 1
    y: 1
   padding:
-   x: 5
+   x: 3
    y: 3
   dynamic_padding: true
   # Values for `decorations`:
