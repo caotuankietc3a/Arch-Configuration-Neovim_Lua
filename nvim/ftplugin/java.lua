@@ -9,7 +9,7 @@ if not status_cmp_ok then
   return
 end
 capabilities.textDocument.completion.completionItem.snippetSupport = false
-capabilities = cmp_nvim_lsp.update_capabilities(capabilities)
+capabilities = cmp_nvim_lsp.default_capabilities(capabilities)
 
 local status, jdtls = pcall(require, "jdtls")
 if not status then
@@ -82,7 +82,9 @@ local config = {
     "-Dlog.level=ALL",
     --[[ "-javaagent:" .. home .. "/.local/share/nvim/lsp_servers/jdtls/lombok.jar", ]]
     -- For lsp_servers
-    "-javaagent:" .. jdtls_dir .. "/lombok.jar",
+    "-javaagent:"
+        .. jdtls_dir
+        .. "/lombok.jar",
     "-Xms1g",
     "--add-modules=ALL-SYSTEM",
     "--add-opens",

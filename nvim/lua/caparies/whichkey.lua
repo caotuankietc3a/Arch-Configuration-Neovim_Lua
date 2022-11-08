@@ -202,6 +202,13 @@ local mappings = {
     r = { "<Cmd>JdtSetRuntime<CR>", "Run Time" },
     w = { "<Cmd>JdtWipeDataAndRestart<CR>", "Wipe Restart" },
   },
+
+  m = {
+    name = "Markdown PreView",
+    p = { "<Cmd>MarkdownPreview<CR>", "Markdown Preview" },
+    s = { "<Cmd>MarkdownPreviewStop<CR>", "Markdown Preview Stop" },
+    t = { "<Cmd>MarkdownPreviewToggle<CR>", "Markdown Preview Toggle" },
+  },
 }
 
 which_key.setup(setup)

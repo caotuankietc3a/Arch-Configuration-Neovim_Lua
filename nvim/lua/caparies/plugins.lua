@@ -170,6 +170,9 @@ return packer.startup(function(use)
   use("rcarriga/nvim-notify")
   use("ryanoasis/vim-devicons")
 
+  -- MakedownPreview for md
+  use({ "iamcco/markdown-preview.nvim" })
+
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end

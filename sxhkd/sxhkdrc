@@ -159,6 +159,10 @@ super + Caps_Lock
 super + c
   copyq menu
 
+# gpick
+super + v
+  gpick -s -o
+
 # skippy-xd
 super + s
   skippy-xd --config ~/.config/skippy-xd/skippy-xd
