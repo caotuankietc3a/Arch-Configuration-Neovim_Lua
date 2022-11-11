@@ -35,7 +35,7 @@ neo_tree.setup({
     tab_labels = {
       filesystem = "" .. " File",
       buffers = "" .. " Bufs",
-      --[[ git_status = "" .. " Git", ]]
+      git_status = "" .. " Git",
       diagnostics = "裂" .. " Diagnostic",
     },
   },
