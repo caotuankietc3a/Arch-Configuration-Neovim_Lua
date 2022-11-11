@@ -67,7 +67,7 @@ return packer.startup(function(use)
   })
 
   -- Winbar
-  --[[ use("fgheng/winbar.nvim") ]]
+  use("fgheng/winbar.nvim")
   -- need neovim v8
 
   use("akinsho/bufferline.nvim")

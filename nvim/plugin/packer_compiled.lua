@@ -338,6 +338,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/caparies/.local/share/nvim/site/pack/packer/start/which-key.nvim",
     url = "https://github.com/folke/which-key.nvim"
+  },
+  ["winbar.nvim"] = {
+    loaded = true,
+    path = "/home/caparies/.local/share/nvim/site/pack/packer/start/winbar.nvim",
+    url = "https://github.com/fgheng/winbar.nvim"
   }
 }
 
