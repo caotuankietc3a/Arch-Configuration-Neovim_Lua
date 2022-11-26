@@ -9,8 +9,8 @@ configuration {
 }
 
 * {
-  background: rgba(40,44,52,0.8);
-  foreground: #ff9e64f0;
+    background: rgba(40,44,52,0.8);
+    foreground: #ff9e64f0;
 
   normal-black:   #32344a;
   normal-red:     #f7768e;
@@ -32,7 +32,7 @@ configuration {
 }
 
 * {
-  background-color: rgba(0,0,0,0);
+  background-color: @background;
   color: @foreground;
 }
 

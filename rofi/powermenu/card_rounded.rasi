@@ -36,7 +36,7 @@ textbox-prompt-colon {
 	str: 							"ღ 𝒄𝒂𝒑𝒂𝒓𝒊𝒆𝒔 ⚤";
 	background-color: 				transparent;
 	text-color: 					@foreground;
-  padding:                        0.5% 0.5% 0.5% 0%;
+  padding:                        0.5% 0.5% 0.5% 1.5%; // Important
 }
 
 inputbar {

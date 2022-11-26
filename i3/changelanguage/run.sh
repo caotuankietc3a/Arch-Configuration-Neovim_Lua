@@ -15,11 +15,11 @@ fi
 if [ $lang = $EN_ibus ]
 then
   ibus engine $VN_ibus
-  notify-send "Ibus" "Vietnamese" --icon="~/.config/Arch Config/Flag/Flag-Vietnam.jpg" -t 700 -a "System"
+  notify-send "Ibus" "Vietnamese" --icon="~/.config/Arch Config/Flag/Flag-Vietnam.png" -t 700 -a "System"
 fi
 
 if [ $lang = $VN_ibus ]
 then
   ibus engine $EN_ibus
-  notify-send "Ibus" "English" --icon="~/.config/Arch Config/Flag/Flag_of_the_United_States.svg" -t 700 -a "System"
+  notify-send "Ibus" "English" --icon="~/.config/Arch Config/Flag/Flag_of_the_United_States.jpg" -t 700 -a "System"
 fi

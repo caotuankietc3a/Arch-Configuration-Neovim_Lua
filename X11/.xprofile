@@ -50,6 +50,9 @@ copyq &
 # picom
 picom --experimental-backends &
 
+# ulauncher
+# ulauncher &
+
 # Screenkey applet (this will break everything)
 # screenkey --start-disabled
 
