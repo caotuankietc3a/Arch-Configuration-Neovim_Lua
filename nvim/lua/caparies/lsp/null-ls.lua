@@ -28,7 +28,9 @@ null_ls.setup({
     formatting.clang_format,
     formatting.tidy,
     formatting.yamlfmt,
-    diagnostics.flake8,
+    formatting.autopep8,
+    formatting.stylish_haskell,
+    --[[ diagnostics.flake8, ]]
     diagnostics.eslint,
     diagnostics.yamllint,
   },
