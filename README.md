@@ -2,70 +2,39 @@
 
 ## **Make sure you installed these**
 
-### nvim
+### nvim, rofi, polybar, zsh, alacritty, copyq, dunst, feh, flameshot, pasystray, network-manager-applet, networkmanager, network-manager-applet, pamixer, pulseaudio, light, ibus-bamboo
 
 ```
-sudo pacman -S neovim
+sudo pacman -S neovim rofi polybar zsh ranger alacritty dunst copyq feh flameshot pasystray network-manager-applet networkmanager pamixer pulseaudio light
+
+yay -Sy ibus-bamboo
 ```
 
-### rofi
+### picom, xbanish, blueman, onlyoffice
 
 ```
-sudo pacman -S rofi
-```
-
-### picom
-
-```
-sudo pacman -S picom
-```
-
-### polybar
-
-```
-sudo pacman -S polybar
-```
-
-### zsh
-
-```
-sudo pacman -S zsh
-```
-
-### ranger
-
-```
-sudo pacman -S ranger
-```
-
-### alacritty
-
-```
-sudo pacman -S alacritty
-```
-
-### dunst
-
-```
-sudo pacman -S dunst
-```
-
-### ibus-bamboo
-
-```
-sudo pacman -S ibus-bamboo
+yay -Sy picom-animations-git xbanish blueman onlyoffice-bin
 ```
 
 ### colorls
 
 ```
-sudo pacman -S colorls
+gem install colorls
+
+cp $(dirname $(gem which colorls))/yaml/dark_colors.yaml ~/.config/colorls/dark_colors.yaml
 ```
 
-### copyq
+### ibus-bamboo
 
 ```
-sudo pacman -S copyq
+
+```
+
+### nvim
+
+```
+yay -Sy cargo go luarocks ruby composer php npm nodejs python python-pip xsel
+sudo pacman -Sy java java-runtime-common java-environment-common jdk-openjdk jre-openjdk wget curl tar gzip prettier stylua tidy yamllint flake8 eslint
 ```
 
 ### **Learn more from kietcaoc3a**
