@@ -104,7 +104,7 @@ keymap("n", "fo", "zR", opts)
 keymap(
   "n",
   "<C-s>",
-  "<Cmd>source ~/.config/nvim/lua/caparies/colorscheme.lua<CR>",
+  "<Cmd>source ~/.config/nvim/lua/caparies/config/lualine.lua<CR>",
   opts
 )
 

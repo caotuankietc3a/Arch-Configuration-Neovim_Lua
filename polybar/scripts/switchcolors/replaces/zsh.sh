@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ALDIR="$HOME/.config/alacritty/alacritty.yml"
-NvimDIR="$HOME/.config/nvim/lua/caparies/colorscheme.lua"
+NvimDIR="$HOME/.config/nvim/lua/caparies/config/lualine.lua"
 ColorlsDIR="$HOME/.config/colorls/dark_colors.yaml"
 Zsh_DIR="$HOME/.config/zsh"
 

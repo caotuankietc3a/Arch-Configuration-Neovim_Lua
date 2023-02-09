@@ -18,7 +18,7 @@ function bspwm_changes() {
   elif [ $1 == "tokyo-night" ]
   then
     sed -i '0,/border_color=.*/s//border_color=\"#61AFEF\"/' $BSPWMDIR/bspwmrc
-    sed -i '0,/feh --bg-scale --randomize .*/s//feh --bg-scale --randomize ~\/.config\/Arch\\ Config\/Anime\/*/' $SXHKD/sxhkdrc
-    sed -i '0,/feh --bg-scale --randomize .*/s//feh --bg-scale --randomize ~\/.config\/Arch\\ Config\/Anime\/*/' $BSPWMDIR/bspwmrc
+    sed -i '0,/feh --bg-scale --randomize .*/s//feh --bg-scale --randomize ~\/.config\/Arch\\ Config\/Abstract\/*/' $SXHKD/sxhkdrc
+    sed -i '0,/feh --bg-scale --randomize .*/s//feh --bg-scale --randomize ~\/.config\/Arch\\ Config\/Abstract\/*/' $BSPWMDIR/bspwmrc
   fi
 }
