@@ -40,16 +40,16 @@ local setup = {
     scroll_up = "<c-u>", -- binding to scroll up inside the popup
   },
   window = {
-    border = "none", -- none, single, double, shadow
+    border = "rounded", -- none, single, double, shadow
     position = "bottom", -- bottom, top
-    margin = { 1, 0, 2, 0 }, -- extra window margin [top, right, bottom, left]
-    padding = { 1, 2, 1, 2 }, -- extra window padding [top, right, bottom, left]
-    winblend = 10,
+    margin = { 1, 0, 1, 0 }, -- extra window margin [top, right, bottom, left]
+    padding = { 2, 2, 2, 2 }, -- extra window padding [top, right, bottom, left]
+    winblend = 0,
   },
   layout = {
     height = { min = 4, max = 25 }, -- min and max height of the columns
     width = { min = 20, max = 50 }, -- min and max width of the columns
-    spacing = 5, -- spacing between columns
+    spacing = 3, -- spacing between columns
     align = "center", -- align columns left, center or right
   },
   ignore_missing = true, -- enable this to hide mappings for which you didn't specify a label
@@ -88,7 +88,6 @@ local opts = {
 }
 local mappings = {
   ["a"] = { "<cmd>Alpha<cr>", "Alpha" },
-  ["0"] = { "<cmd>Dashboard<CR>", "Dashboard" },
   -- ["b"] = {
   -- 	"<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
   -- 	"Buffers",
@@ -107,18 +106,9 @@ local mappings = {
     "Explorer Float",
   },
   ["w"] = { "<cmd>w!<CR>", "Save" },
-  ["W"] = {
-    "<cmd>lua vim.lsp.buf.format()<CR><cmd>w!<CR>",
-    "Format and Save",
-  },
   ["q"] = { "<cmd>q!<CR>", "Quit" },
   ["d"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
   ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
-  ["c"] = {
-    "<cmd>MonokaiProSelect<CR>",
-    "Choose moonokai pro filter",
-  },
-  ["m"] = { "<cmd>WindowsMaximize<CR>", "Zoom window" },
   ["f"] = {
     "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes'))<cr>",
     "Find files",
@@ -129,7 +119,6 @@ local mappings = {
     "<cmd>lua require('telescope').extensions.projects.projects()<cr>",
     "Projects",
   },
-  ["<Tab>"] = { "<c-6>", "Move back and forth" },
   l = {
     name = "LSP",
     a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
@@ -167,6 +156,27 @@ local mappings = {
       "Workspace Symbols",
     },
   },
+  j = {
+    name = "Java",
+    --[[ o = { "<Cmd>lua require'jdtls'.organize_imports()<CR>", "Organize Imports" }, ]]
+    --[[ v = { "<Cmd>lua require('jdtls').extract_variable()<CR>", "Extract Variable" }, ]]
+    --[[ c = { "<Cmd>lua require('jdtls').extract_constant()<CR>", "Extract Constant" }, ]]
+    --[[ t = { "<Cmd>lua require'jdtls'.test_nearest_method()<CR>", "Test Method" }, ]]
+    --[[ T = { "<Cmd>lua require'jdtls'.test_class()<CR>", "Test Class" }, ]]
+    u = { "<Cmd>JdtUpdateConfig<CR>", "Update Config" },
+    s = { "<Cmd>JdtShowLogs<CR>", "Show Logs" },
+    b = { "<Cmd>JdtBytecode<CR>", "Byte Code" },
+    r = { "<Cmd>JdtSetRuntime<CR>", "Run Time" },
+    w = { "<Cmd>JdtWipeDataAndRestart<CR>", "Wipe Restart" },
+  },
+
+  m = {
+    name = "Markdown PreView",
+    p = { "<Cmd>MarkdownPreview<CR>", "Markdown Preview" },
+    s = { "<Cmd>MarkdownPreviewStop<CR>", "Markdown Preview Stop" },
+    t = { "<Cmd>MarkdownPreviewToggle<CR>", "Markdown Preview Toggle" },
+  },
+
   -- g = {
   -- 	name = "Git",
   -- 	g = { "<cmd>lua _LAZYGIT_TOGGLE()<CR>", "Lazygit" },
