@@ -108,15 +108,15 @@ return {
     end,
   },
 
-  {
-    "anuvyklack/windows.nvim",
-    event = "WinNew",
-    dependencies = {
-      { "anuvyklack/middleclass" },
-      { "anuvyklack/animation.nvim", enabled = true },
-    },
-    config = function() require("caparies.config.windows") end,
-  },
+  -- {
+  --   "anuvyklack/windows.nvim",
+  --   event = "WinNew",
+  --   dependencies = {
+  --     { "anuvyklack/middleclass" },
+  --     { "anuvyklack/animation.nvim", enabled = true },
+  --   },
+  --   config = function() require("caparies.config.windows") end,
+  -- },
 
   {
     "NvChad/nvim-colorizer.lua",
