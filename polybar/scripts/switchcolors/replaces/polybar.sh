@@ -51,7 +51,7 @@ function polybar_changes() {
     sed -i '0,/bright-blue: .*/s//bright-blue: #c678dd;/' $ThemeDIR/tokyo_night_switch_theme.rasi
   elif [ $1 == "tokyo-night" ]
   then
-    sed -i 's/background = .*/background = #555555e0/g' $ColorDIR
+    sed -i 's/background = .*/background = #1A1D2C/g' $ColorDIR
     sed -i 's/setting = .*/setting = #069c0b/g' $ColorDIR
     sed -i 's/wlan-ramp-signal = .*/wlan-ramp-signal = #CE93D8/g' $ColorDIR
     sed -i 's/powermenu = .*/powermenu = #356eb0/g' $ColorDIR
