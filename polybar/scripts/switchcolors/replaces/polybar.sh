@@ -7,7 +7,7 @@ ThemeDIR="$HOME/.config/polybar/themes"
 function polybar_changes() {
   if [ $1 == "tokyo-dark" ]
   then
-    sed -i -e 's/background = .*/background = #2d568710/g' $ColorDIR
+    sed -i -e 's/background = .*/background = #13121D/g' $ColorDIR
     sed -i -e 's/setting = .*/setting = #fa1414/g' $ColorDIR
     sed -i -e 's/wlan-ramp-signal = .*/wlan-ramp-signal = #9404d6/g' $ColorDIR
     sed -i -e 's/powermenu = .*/powermenu = #fa8541/g' $ColorDIR
@@ -15,7 +15,7 @@ function polybar_changes() {
     sed -i -e 's/change_theme = .*/change_theme = #faa434/g' $ColorDIR
     sed -i 's/date = .*/date = #fffc05/g' $ColorDIR
     sed -i -e 's/cpu = .*/cpu = #2263bf/g' $ColorDIR
-    sed -i 's/border = .*/border = #61AFEF/g' $ColorDIR
+    sed -i 's/border = .*/border = #fa8541/g' $ColorDIR
     sed -i -e 's/i3-seperator = .*/i3-seperator = #cc9a74/g' $ColorDIR
     sed -i -e 's/i3-unfocus = .*/i3-unfocus = #d12662/g' $ColorDIR
     sed -i '0,/background: .*/s//background: #14141410;/' $ThemeDIR/tokyo_night_powermenu.rasi
@@ -59,7 +59,7 @@ function polybar_changes() {
     sed -i 's/change_theme = .*/change_theme = #356eb0/g' $ColorDIR
     sed -i 's/cpu = .*/cpu = #00e1ff/g' $ColorDIR
     sed -i 's/date = .*/date = #fffc05/g' $ColorDIR
-    sed -i 's/border = .*/border = #fa8541/g' $ColorDIR
+    sed -i 's/border = .*/border = #61AFEF/g' $ColorDIR
     sed -i 's/i3-seperator = .*/i3-seperator = #2d9683/g' $ColorDIR
     sed -i 's/i3-unfocus = .*/i3-unfocus = #fc607c/g' $ColorDIR
     sed -i '0,/background: .*/s//background: rgba(40,44,52,0.8);/' $ThemeDIR/tokyo_night_powermenu.rasi

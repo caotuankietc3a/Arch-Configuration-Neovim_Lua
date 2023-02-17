@@ -5,7 +5,7 @@
 ### **Dependecies** :rocket:
 
 ```
-sudo pacman -S neovim rofi polybar zsh ranger alacritty dunst copyq feh flameshot pasystray network-manager-applet networkmanager pamixer pulseaudio light gpick gnome-keyring
+sudo pacman -S neovim rofi polybar zsh alacritty dunst copyq feh flameshot pasystray network-manager-applet networkmanager pamixer pulseaudio light gpick gnome-keyring
 ```
 
 ```
@@ -31,8 +31,28 @@ sudo pacman -Sy java java-runtime-common java-environment-common jdk-openjdk jre
 
 ```
 sudo npm install markdownlint-cli2 -g
-cd .local/share/nvim/site/pack/packer/start/markdown-preview.nvim/
+cd .local/share/nvim/lazy/markdown-preview.nvim/
 yarn install
+```
+
+### ranger :satisfied:
+
+- Drag, drop, image preview and icons
+
+```
+sudo pacman -Sy ueberzug ranger
+git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
+git clone https://github.com/mwh/dragon.git; cd dragon; make install
+```
+
+### Alacritty ligatures :stuck_out_tongue_winking_eye:
+
+```
+git clone https://github.com/zenixls2/alacritty; cd alacritty
+git checkout ligature
+cargo build --release
+sudo mv /usr/bin/alacritty /usr/bin/alacritty.bak
+sudo cp ./target/release/alacritty /usr/bin
 ```
 
 ### **Learn more from caotuankietc3a** :ocean:
