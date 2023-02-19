@@ -74,7 +74,7 @@ bspc rule -a Ulauncher border=off state=floating
 
 
 # Random Picture Every Login
-feh --bg-scale --randomize ~/.config/Arch\ Config/Anime/*
+feh --bg-scale --randomize ~/.config/Arch\ Config/Abstract/*
 
 # fix X cursor to default
 xsetroot -cursor_name left_ptr &
