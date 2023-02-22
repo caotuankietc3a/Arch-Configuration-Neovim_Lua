@@ -88,16 +88,8 @@ local opts = {
 }
 local mappings = {
   ["a"] = { "<cmd>Alpha<cr>", "Alpha" },
-  -- ["b"] = {
-  -- 	"<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
-  -- 	"Buffers",
-  -- },
   ["b"] = {
-    "<cmd>Neotree toggle show buffers left<cr>",
-    "Buffers",
-  },
-  ["g"] = {
-    "<cmd>Neotree toggle show git_status left<cr>",
+    "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
     "Buffers",
   },
   ["e"] = { "<cmd>Neotree toggle position=left<cr>", "Explorer" },
@@ -177,43 +169,43 @@ local mappings = {
     t = { "<Cmd>MarkdownPreviewToggle<CR>", "Markdown Preview Toggle" },
   },
 
-  -- g = {
-  -- 	name = "Git",
-  -- 	g = { "<cmd>lua _LAZYGIT_TOGGLE()<CR>", "Lazygit" },
-  -- 	j = { "<cmd>lua require 'gitsigns'.next_hunk()<cr>", "Next Hunk" },
-  -- 	k = { "<cmd>lua require 'gitsigns'.prev_hunk()<cr>", "Prev Hunk" },
-  -- 	l = { "<cmd>lua require 'gitsigns'.blame_line()<cr>", "Blame" },
-  -- 	p = { "<cmd>lua require 'gitsigns'.preview_hunk()<cr>", "Preview Hunk" },
-  -- 	r = { "<cmd>lua require 'gitsigns'.reset_hunk()<cr>", "Reset Hunk" },
-  -- 	R = { "<cmd>lua require 'gitsigns'.reset_buffer()<cr>", "Reset Buffer" },
-  -- 	s = { "<cmd>lua require 'gitsigns'.stage_hunk()<cr>", "Stage Hunk" },
-  -- 	u = {
-  -- 		"<cmd>lua require 'gitsigns'.undo_stage_hunk()<cr>",
-  -- 		"Undo Stage Hunk",
-  -- 	},
-  -- 	o = { "<cmd>Telescope git_status<cr>", "Open changed file" },
-  -- 	b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
-  -- 	c = { "<cmd>Telescope git_commits<cr>", "Checkout commit" },
-  -- 	d = {
-  -- 		"<cmd>Gitsigns diffthis HEAD<cr>",
-  -- 		"Diff",
-  -- 	},
-  -- },
+  g = {
+    name = "Git",
+    g = { "<cmd>lua _LAZYGIT_TOGGLE()<CR>", "Lazygit" },
+    j = { "<cmd>lua require 'gitsigns'.next_hunk()<cr>", "Next Hunk" },
+    k = { "<cmd>lua require 'gitsigns'.prev_hunk()<cr>", "Prev Hunk" },
+    l = { "<cmd>lua require 'gitsigns'.blame_line()<cr>", "Blame" },
+    p = { "<cmd>lua require 'gitsigns'.preview_hunk()<cr>", "Preview Hunk" },
+    r = { "<cmd>lua require 'gitsigns'.reset_hunk()<cr>", "Reset Hunk" },
+    R = { "<cmd>lua require 'gitsigns'.reset_buffer()<cr>", "Reset Buffer" },
+    s = { "<cmd>lua require 'gitsigns'.stage_hunk()<cr>", "Stage Hunk" },
+    u = {
+      "<cmd>lua require 'gitsigns'.undo_stage_hunk()<cr>",
+      "Undo Stage Hunk",
+    },
+    o = { "<cmd>Telescope git_status<cr>", "Open changed file" },
+    b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
+    c = { "<cmd>Telescope git_commits<cr>", "Checkout commit" },
+    d = {
+      "<cmd>Gitsigns diffthis HEAD<cr>",
+      "Diff",
+    },
+  },
 
-  -- t = {
-  --   name = "Terminal",
-  --   n = { "<cmd>lua _NODE_TOGGLE()<cr>", "Node" },
-  --   c = { "<cmd>lua _CPP_TOGGLE()<cr>", "Cpp" },
-  --   C = { "<cmd>lua _CPP_FILEs_TOGGLE()<cr>", "Cpp with arguments" },
-  --   j = { "<cmd>lua _JAVA_TOGGLE()<cr>", "Java" },
-  --   J = { "<cmd>lua _JAVA_PACKAGE_TOGGLE()<cr>", "Java with package" },
-  --   u = { "<cmd>lua _NCDU_TOGGLE()<cr>", "NCDU" },
-  --   t = { "<cmd>lua _HTOP_TOGGLE()<cr>", "Htop" },
-  --   p = { "<cmd>lua _PYTHON_TOGGLE()<cr>", "Python" },
-  --   f = { "<cmd>ToggleTerm direction=float<cr>", "Float" },
-  --   h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
-  --   v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
-  -- },
+  t = {
+    name = "Terminal",
+    n = { "<cmd>lua _NODE_TOGGLE()<cr>", "Node" },
+    c = { "<cmd>lua _CPP_TOGGLE()<cr>", "Cpp" },
+    C = { "<cmd>lua _CPP_FILEs_TOGGLE()<cr>", "Cpp with arguments" },
+    j = { "<cmd>lua _JAVA_TOGGLE()<cr>", "Java" },
+    J = { "<cmd>lua _JAVA_PACKAGE_TOGGLE()<cr>", "Java with package" },
+    u = { "<cmd>lua _NCDU_TOGGLE()<cr>", "NCDU" },
+    t = { "<cmd>lua _HTOP_TOGGLE()<cr>", "Htop" },
+    p = { "<cmd>lua _PYTHON_TOGGLE()<cr>", "Python" },
+    f = { "<cmd>ToggleTerm direction=float<cr>", "Float" },
+    h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
+    v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
+  },
 
   s = {
     name = "Session",
@@ -314,4 +306,5 @@ local goto_opts = {
   noremap = true, -- use `noremap` when creating keymaps
   nowait = true, -- use `nowait` when creating keymaps
 }
+
 which_key.register(goto_mapping, goto_opts)

@@ -15,6 +15,6 @@ vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 require("lazy").setup({
   spec = "caparies.core.plugins",
   defaults = { lazy = false, version = "*" },
-  install = { colorscheme = { "monokai-pro" } },
+  install = { colorscheme = { "tokyonight" } },
   checker = { enabled = false },
 })

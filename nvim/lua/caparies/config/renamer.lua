@@ -1,7 +1,5 @@
 local status_ok, renamer = pcall(require, "renamer")
-if not status_ok then
-  return
-end
+if not status_ok then return end
 local mappings_utils = require("renamer.mappings.utils")
 renamer.setup({
   -- The popup title, shown if `border` is true
@@ -42,5 +40,5 @@ renamer.setup({
   },
   -- Custom handler to be run after successfully renaming the word. Receives
   -- the LSP 'textDocument/rename' raw response as its parameter.
-  handler = nil,
+  -- handler = nil,
 })

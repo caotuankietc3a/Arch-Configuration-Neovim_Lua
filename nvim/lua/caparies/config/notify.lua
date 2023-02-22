@@ -36,4 +36,12 @@ notify.setup({
   },
 })
 
+notify = function(msg, ...)
+  if msg:match("warning: multiple different client offset_encodings") then
+    return
+  end
+
+  notify(msg, ...)
+end
+
 vim.notify = notify
