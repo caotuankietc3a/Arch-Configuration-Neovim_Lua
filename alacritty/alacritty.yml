@@ -1,18 +1,19 @@
 window:
   dimensions:
-    columns: 50
-    lines: 40
+    #columns: 50
+    columns: 80
+    lines: 30
   position:
     x: 1
     y: 1
   padding:
     x: 3
-    y: 3
+    y: 10
   dynamic_padding: true
   # Values for `decorations`:
   #     - full: Borders and title bar
   #     - none: Neither borders nor title bar
-  decorations: none
+  decorations: full
   opacity: 1
   Values for `startup_mode`:
   #   - Windowed
@@ -20,8 +21,8 @@ window:
   #   - Fullscreen
   startup_mode: Windowed
   # Window title
-  title: Alacritty
-  dynamic_title: true
+  title: "ღ 𝓬𝓪𝓹𝓪𝓻𝓲𝓮𝓼 ⚡"
+  dynamic_title: false
   Window class (Linux/BSD only):
   class:
     instance: Alacritty
@@ -193,8 +194,8 @@ font:
     family: Operator Mono
     style: Bold Italic
   # Point size
-  # size: 10
-  size: 8
+  size: 12
+  # size: 8
   offset:
     x: 0
     y: 0
