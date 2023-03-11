@@ -94,10 +94,10 @@ keymap("n", "<C-f>", ":lua vim.lsp.buf.format({async = true})<CR>", opts)
 keymap("n", "<A-o>", "<C-w>r", opts)
 
 -- Folding command
-keymap("n", "fA", "zA", opts)
-keymap("n", "fa", "za", opts)
-keymap("n", "fc", "zM", opts)
-keymap("n", "fo", "zR", opts)
+-- keymap("n", "fA", "zA", opts)
+-- keymap("n", "fa", "za", opts)
+-- keymap("n", "fc", "zM", opts)
+-- keymap("n", "fo", "zR", opts)
 
 -- Auto load nvim color_scheme
 keymap(
