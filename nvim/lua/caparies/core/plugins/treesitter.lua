@@ -7,19 +7,14 @@ return {
     config = function() require("caparies.config.treesitter") end,
   },
 
-  -- {
-  --   "windwp/nvim-ts-autotag",
-  --   config = function() require("caparies.config.autotags") end,
-  -- },
+  {
+    "windwp/nvim-ts-autotag",
+    config = function() require("caparies.config.autotags") end,
+  },
 
-  -- "nvim-treesitter/playground",
+  "nvim-treesitter/playground",
 
   {
     "p00f/nvim-ts-rainbow",
   },
-
-  -- {
-  --   "HiPhish/nvim-ts-rainbow2",
-  --   event = "BufReadPost",
-  -- },
 }

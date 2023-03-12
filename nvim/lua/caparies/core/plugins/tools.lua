@@ -4,7 +4,6 @@ return {
     dependencies = "JoosepAlviste/nvim-ts-context-commentstring",
     config = function() require("caparies.config.comment") end,
   },
-
   {
     "kevinhwang91/rnvimr",
     init = function() require("caparies.config.ranger") end,
