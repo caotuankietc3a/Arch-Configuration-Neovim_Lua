@@ -29,8 +29,8 @@ config.settings = {
       updateBuildConfiguration = "interactive",
       runtimes = {
         {
-          name = "JavaSE-17",
-          path = "/usr/lib/jvm/java-17-openjdk",
+          name = "JavaSE-19",
+          path = "/usr/lib/jvm/java-19-openjdk-amd64",
         },
       },
     },
@@ -143,10 +143,11 @@ vim.list_extend(jar_patterns, bundle_list)
 local bundles = {}
 for _, jar_pattern in ipairs(jar_patterns) do
   for _, bundle in ipairs(vim.split(vim.fn.glob(home .. jar_pattern), "\n")) do
-    if not vim.endswith(
-      bundle,
-      "com.microsoft.java.test.runner-jar-with-dependencies.jar"
-    )
+    if
+        not vim.endswith(
+          bundle,
+          "com.microsoft.java.test.runner-jar-with-dependencies.jar"
+        )
         and not vim.endswith(bundle, "com.microsoft.java.test.runner.jar")
     then
       table.insert(bundles, bundle)

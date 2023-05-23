@@ -25,6 +25,7 @@ null_ls.setup({
     --[[ formatting.google_java_format, ]]
     formatting.clang_format,
     formatting.tidy,
+    formatting.phpcbf,
     formatting.yamlfmt,
     formatting.autopep8,
     formatting.stylish_haskell,

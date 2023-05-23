@@ -101,3 +101,18 @@ setxkbmap -option caps:escape
 export PATH="$PATH:$HOME/.rvm/bin"
 
 source $ZDOTDIR/zsh-profile
+
+# export LD_LIBRARY_PATH=/opt/oracle/instantclient_21_4:$LD_LIBRARY_PATH
+# export PATH=$LD_LIBRARY_PATH:$PATH
+
+export LD_LIBRARY_PATH=$ORACLE_HOME/lib
+export PATH=$ORACLE_HOME/bin:$PATH
+export ORACLE_HOME=/u01/app/oracle/product/19.0.0/dbhome_1/
+export ORACLE_SID=XE
+
+
+export GRADLE_HOME=/opt/gradle/gradle-7.4.2
+
+export PATH=${GRADLE_HOME}/bin:${PATH}
+
+eval "$(direnv hook zsh)"
